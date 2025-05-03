@@ -6,7 +6,7 @@ export default function Navbar () {
             <div className="">
                 <Image src={'/logo/ToyotaIconBlack.png'} className="cursor-pointer" alt="Toyota Logo Image" width={120} height={120}></Image>
             </div>
-            <div className="flex gap-6 font-semibold tracking-tight">
+            <div className="flex gap-8 font-semibold">
                 <a href="">Toyota Electrified</a>
                 <a href="">Gazoo Racing</a>
                 <a href="">Models</a>
@@ -15,7 +15,7 @@ export default function Navbar () {
                 <a href="">More</a>
             </div>
             <div className="">
-                <Image src={'/icons/Maps.png'} className="cursor-pointer" alt="Maps" width={40} height={40}/>
+                <Image src={'/icons/Maps.png'} className="cursor-pointer" alt="Maps" width={37} height={37}/>
             </div>
         </div>
     )
