@@ -1,4 +1,5 @@
 import Carousel from "@/components/ClientComponents/Carousel";
+import CatalogCar from "@/components/ClientComponents/CatalogCar";
 import FixedWhatsapp from "@/components/ClientComponents/FixedWhatsapp";
 import { MaxWidthWrapper } from "@/components/MaxWidthWrapper";
 import PersonalSection from "@/components/PersonalSection";
@@ -13,8 +14,7 @@ export default function Home () {
         <PersonalSection/>
       </div>
       <MaxWidthWrapper className="mt-24">
-        <h2>Cari Toyota Pilihan Anda</h2>
-        <p>Jelajahi Seluruh Rangkaian Model </p>
+        <CatalogCar/>
       </MaxWidthWrapper>
     </Fragment>
   )
