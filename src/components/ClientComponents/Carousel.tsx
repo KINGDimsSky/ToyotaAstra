@@ -57,12 +57,12 @@ export default function Carousel() {
           </div>
         ))}
       </div>
-      <button onClick={prevImage} className="absolute left-5 z-10 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors"
+      <button onClick={prevImage} className="absolute left-5 z-10 p-2 cursor-pointer rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors"
         aria-label="Previous image"
         disabled={isTransitioning}>
        <ArrowLeft size={24} />
       </button>
-      <button onClick={nextImage} className="absolute right-5 z-10 p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors"
+      <button onClick={nextImage} className="absolute right-5 z-10 p-2 cursor-pointer rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors"
         aria-label="Next image"
         disabled={isTransitioning}>
         <ArrowRight size={24} />
