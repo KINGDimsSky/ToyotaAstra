@@ -16,8 +16,8 @@ export default function Home () {
       </div>
       <MaxWidthWrapper className="mt-24">
         <CatalogCar/>
-        <News/>
       </MaxWidthWrapper>
+      <News/>
     </Fragment>
   )
 }
