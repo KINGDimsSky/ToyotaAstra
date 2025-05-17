@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function CardNews () {
     return (
-        <div className="w-[26rem] border border-gray-400 rounded-xl overflow-hidden">
-            <div className="relative h-64 bg-cyan-300">
+        <div className="w-[22rem] md:w-[28rem] border border-gray-400 rounded-xl overflow-hidden">
+            <div className="relative h-52 md:h-72 bg-cyan-300">
               <Image src={'/News/GazooRacing.jpg'} alt="News Image" fill className="object-cover"/>
             </div>
             <div className="flex flex-col px-6 py-4">

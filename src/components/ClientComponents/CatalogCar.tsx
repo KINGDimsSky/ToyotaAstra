@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { CategoryCar } from "@/data/dataCategoryCar";
 import CardProduct from "./Cardproduct";
 import { MdFileDownload } from "react-icons/md";
+import { MaxWidthWrapper } from "../MaxWidthWrapper";
 
 export default function CatalogCar () {
     const [StateCategory, SetStateCategory] = useState<string>('All');
@@ -13,11 +14,12 @@ export default function CatalogCar () {
     }
 
     return (
+      <MaxWidthWrapper className="mt-12 md:mt-16 px-4 sm:px-0">
         <div className="flex flex-col items-center">
-            <h2 className="text-4xl font-bold uppercase tracking-wide">Cari Toyota Pilihan Anda</h2>
-            <p className="text-gray-600 mt-6">Jelajahi seluruh rangkaian model Toyota dan temukan yang paling cocok untuk Anda.</p>
+            <h2 className="text-4xl text-center  font-bold uppercase tracking-wide">Cari Toyota Pilihan Anda</h2>
+            <p className="text-gray-600 mt-6 text-sm text-center md:text-base">Jelajahi seluruh rangkaian model Toyota dan temukan yang paling cocok untuk Anda.</p>
             <div className="flex flex-col mt-12 w-full">
-              <div className="flex justify-center gap-4">
+              <div className="flex justify-center gap-4 flex-wrap">
                 {CategoryCar.map((data) => (
                   <h2 key={data.id} onClick={() => handleCategory(data.name)} className={`py-2 px-4 ${StateCategory === data.name ? "bg-pink-600 text-white" : "bg-white text-black hover:bg-pink-600 hover:text-white"} cursor-pointer rounded-lg font-semibold text-sm transition-all duration-300`}>{data.name}</h2>
                 ))}
@@ -33,5 +35,7 @@ export default function CatalogCar () {
               </div>
             </div>
         </div>
+      </MaxWidthWrapper>
+        
     )
 }
