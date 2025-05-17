@@ -20,7 +20,7 @@ export default function PersonalSection () {
                   <Image src={'/personal/Raysan1.jpg'} alt="Personal Image" fill className="object-cover"/>
                 </div>
                 <div className="mt-12">
-                  <h2 className="text-4xl font-semibold tracking-wider uppercase">Raymond Sentosa</h2>
+                  <h2 className="text-4xl font-bold tracking-wider uppercase">Raymond Sentosa</h2>
                   <p className="mt-6 text-gray-700 w-96">Pelajari lebih lanjut tentang teknologi pengisian daya modern dalam infrastruktur pengisian yang praktis.</p>
                 </div>
                 <div className="flex gap-4 mt-8">
@@ -30,7 +30,7 @@ export default function PersonalSection () {
               </div>
 
               <div className="flex flex-col">
-                <p className="text-4xl font-semibold uppercase">Plaza Toyota Gading Serpong</p>
+                <p className="text-4xl font-bold uppercase">Plaza Toyota Gading Serpong</p>
                 <p className="mt-4">JL Raya Boulevard, Kav. 5-11, Gading Serpong, Summarecon, Tangerang, Curug Sangereng, Kelapa Dua, Tangerang Regency, Banten 15810</p>
                 <div className="relative w-2xl h-80 rounded-2xl bg-amber-300 mt-4 overflow-hidden">
                   <Image src={'/personal/Raysanyellowcar.jpg'} alt="Raysan" fill className="object-cover object-left-top"/>

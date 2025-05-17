@@ -29,7 +29,7 @@ export default function Footer () {
             </div>
             <div className="mt-8 pb-6">
               <div className="min-w-full md:min-w-6xl border-t border-gray-300 mb-4"></div>
-              <h2 className="text-xs text-gray-500 text-center mb-2">C 2025 PT.Toyota Astra Motor </h2>
+              <h2 className="text-xs text-gray-500 text-center mb-2">© 2025 Toyota. All Rights reserved.  Developed By. DimsSky</h2>
               <h2 className="text-[11px] text-gray-500 text-center">All Information Applies to Indonesia Vehicles Only</h2>
               <h2 className="text-center text-[11px] text-gray-600 mt-1">Privacy Policy  | Legal Cookies | Contact Us </h2>
             </div>
