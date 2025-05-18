@@ -1,6 +1,6 @@
 'use client'
 
-import { NavNews } from "@/data/dataCategoryNews"
+import { NavNews } from "@/lib/data"
 import { useState, useRef } from "react"
 import CardNews from "./CardNews"
 import { ChevronLeft, ChevronRight } from "lucide-react"
@@ -37,7 +37,7 @@ export default function News() {
                 <div ref={scrollContainerRef} className="flex overflow-x-auto scrollbar-hide gap-6 px-2 py-4 snap-x snap-mandatory">
                   {[...Array(8)].map((_, i) => (
                     <div key={i} className="flex-shrink-0 snap-start">
-                      <CardNews />
+                      <CardNews className="w-[22rem] md:w-[28rem]"/>
                     </div>
                   ))}
                 </div>
@@ -49,9 +49,9 @@ export default function News() {
                 </button>
             </div>
             <div className="self-center mt-12">
-              <button className="py-2 px-8 text-center border border-black rounded-2xl font-semibold hover:bg-black hover:text-white transition-colors">
+              <a href="/berita" className="py-2 px-8 text-center border border-black rounded-2xl font-semibold hover:bg-black hover:text-white transition-colors">
                 More Articles
-              </button>
+              </a>
             </div>
         </div>
     )

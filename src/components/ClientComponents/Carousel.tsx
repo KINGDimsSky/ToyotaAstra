@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useState, useEffect } from "react";
-import { Images } from "@/data/dataCarouselImage";
+import { CarouselImages } from "@/lib/data";
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -14,7 +14,7 @@ export default function Carousel() {
     if (isTransitioning) return;
     setDirection('right');
     setCurrentIndex((prevIndex) => 
-      prevIndex === Images.length - 1 ? 0 : prevIndex + 1
+      prevIndex === CarouselImages.length - 1 ? 0 : prevIndex + 1
     );
     setIsTransitioning(true);
   };
@@ -23,7 +23,7 @@ export default function Carousel() {
     if (isTransitioning) return;
     setDirection('left');
     setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? Images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? CarouselImages.length - 1 : prevIndex - 1
     );
     setIsTransitioning(true);
   };
@@ -46,7 +46,7 @@ export default function Carousel() {
   return (
     <div className="h-[45vh] md:h-[90vh] w-full flex items-center justify-center relative overflow-hidden">
       <div className="relative w-full h-full">
-        {Images.map((image, index) => (
+        {CarouselImages.map((image, index) => (
           <div key={image} className={`absolute inset-0 transition-transform duration-500 ease-in-out ${
               index === currentIndex ? 'translate-x-0' : 
               index < currentIndex ? 
@@ -68,7 +68,7 @@ export default function Carousel() {
         <ArrowRight size={24} />
       </button>
       <div className="absolute bottom-5 flex gap-2 z-10">
-        {Images.map((_, index) => (
+        {CarouselImages.map((_, index) => (
           <button key={index} onClick={() => goToImage(index)} className={`w-3 h-3 rounded-full transition-colors ${
             currentIndex === index ? 'bg-white' : 'bg-white/50 hover:bg-white/70' }`}
             aria-label={`Go to image ${index + 1}`}

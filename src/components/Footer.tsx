@@ -1,5 +1,5 @@
 import { ArrowUp } from "lucide-react";
-import { DataFooter } from "@/data/dataFooter";
+import { DataFooter } from "@/lib/data";
 
 export default function Footer () {
     return (

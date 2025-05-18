@@ -1,8 +1,9 @@
+import { cn } from "@/lib";
 import Image from "next/image";
 
-export default function CardNews () {
+export default function CardNews ({className} : {className ?: string}) {
     return (
-        <div className="w-[22rem] md:w-[28rem] border border-gray-400 rounded-xl overflow-hidden">
+        <div  className={cn('border border-gray-400 rounded-xl overflow-hidden', className)}>
             <div className="relative h-52 md:h-72 bg-cyan-300">
               <Image src={'/News/GazooRacing.jpg'} alt="News Image" fill className="object-cover"/>
             </div>

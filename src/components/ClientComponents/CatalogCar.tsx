@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from "react"
-import { CategoryCar } from "@/data/dataCategoryCar";
+import { CategoryCar } from "@/lib/data";
 import CardProduct from "./Cardproduct";
 import { MdFileDownload } from "react-icons/md";
 import { MaxWidthWrapper } from "../MaxWidthWrapper";
@@ -15,7 +15,7 @@ export default function CatalogCar () {
 
     return (
       <MaxWidthWrapper className="mt-12 md:mt-16 px-4 sm:px-0">
-        <div className="flex flex-col items-center">
+        <div id="catalog" className="flex flex-col items-center">
             <h2 className="text-4xl text-center  font-bold uppercase tracking-wide">Cari Toyota Pilihan Anda</h2>
             <p className="text-gray-600 mt-6 text-sm text-center md:text-base">Jelajahi seluruh rangkaian model Toyota dan temukan yang paling cocok untuk Anda.</p>
             <div className="flex flex-col mt-12 w-full">
