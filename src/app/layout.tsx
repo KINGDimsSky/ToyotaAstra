@@ -3,6 +3,9 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer";
+import FixedWhatsapp from "@/components/ClientComponents/FixedWhatsapp";
+import QuickForm from "@/components/ClientComponents/QuickForm";
+import AdsClient from "@/components/AdsClient";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -25,7 +28,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.variable} antialiased`}>
         <Navbar/>
+        <FixedWhatsapp/>
         {children}
+        <div className="bg-gray-950 py-12 mt-24">
+          <QuickForm/>
+        </div>
+        <AdsClient/>
         <Footer/>
       </body>
     </html>
