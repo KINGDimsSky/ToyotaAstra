@@ -38,28 +38,41 @@ const BeyondExterior =  ({subtitle, contentTitle, contentSubtitle, image, Anothe
     )
 }
 
-const BeyondInterior = ({}) => {
+const BeyondInterior = ({subtitle, contentTitle, contentSubtitle, image, anotherImage} : {subtitle ?: string, contentTitle?: string, contentSubtitle?: string, image: string, anotherImage: imageItem[]}) => {
+
     return (
         <>
           <h2 className="self-center text-4xl font-bold mt-24">Beyond Interior</h2>
-          <p className="text-sm text-gray-600 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facere reprehenderit iusto? Temporibus, hic quos.</p>
+          <p className="text-sm text-gray-600 mt-4">{subtitle}</p>
           <div className="relative w-5/6 h-[34rem] bg-yellow-400 mt-6">
               <Image src={'/assets/BmwM2.jpg'} alt="Beyond Image" fill className="object-cover"/>
           </div>
           <div className="flex flex-col w-full px-24 mt-2">
-            <h2 className="text-xl text-gray-800">Captain Seat</h2>
-            <p className="text-base text-gray-800">Experience convenience throughout every journey on Captain Seat (All Type) supported Detachable Smartphone-like Remote Control (HEV Type)</p> 
+            <h2 className="text-xl text-gray-800">{contentTitle}</h2>
+            <p className="text-base text-gray-800">{contentSubtitle}</p> 
           </div>
-          
+         {anotherImage.length > 0 && (
+            <div className="flex flex-wrap gap-8 w-full px-28 mt-8">
+              {anotherImage.map((data) => (
+                <div key={data.id} className="relative bg-yellow-200 w-[425px] h-72 rounded overflow-hidden">
+                  <Image src={data.img} alt={`Image ${data.id}`} fill className="object-cover"/>
+                </div>
+              ))}
+            </div>
+         )}
         </>
     )
 } 
 
 const BeyondSafety = ({}) => {
     return (
-        <div className="">
-
-        </div>
+        <>
+          <h2 className="self-center text-4xl font-bold mt-24">Beyond Safety</h2>
+          <p className="text-sm text-gray-600 mt-4"></p>
+          <div className="relative w-5/6 h-[34rem] bg-yellow-400 mt-6">
+              <Image src={'/assets/BmwM2.jpg'} alt="Beyond Image" fill className="object-cover"/>
+          </div>
+        </>
     )
 }
 
