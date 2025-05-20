@@ -28,8 +28,14 @@ const BeyondExterior =  ({subtitle, contentTitle, contentSubtitle, image, Anothe
             {AnotherImage.length > 0 && (
               <div className="flex  flex-wrap gap-8 w-full px-28 mt-8">
                 {AnotherImage.map((data) => (
-                  <div key={data.id} className="relative bg-yellow-200 w-[425px] h-72 rounded overflow-hidden">
-                    <Image src={data.img} alt={`Image ${data.id}`} fill className="object-cover"/>
+                  <div key={data.id} className="flex flex-col w-[425px]">
+                    <div key={data.id}  className="relative bg-yellow-200 w-[425px] h-72 rounded overflow-hidden">
+                      <Image src={data.img} alt={`Image ${data.id}`} fill className="object-cover"/>
+                    </div>
+                    <div className="flex flex-col w-full px-4 mt-2">
+                      <h2 className="text-xl text-gray-800 mb-2">Simplicity in Boldness Emblem</h2>
+                      <p className="text-base text-gray-800">The Vellfire emblem detail are designed to strengthen the extravagance look on every journey.</p>
+                    </div>
                   </div>
                 ))}
               </div>    
@@ -38,7 +44,7 @@ const BeyondExterior =  ({subtitle, contentTitle, contentSubtitle, image, Anothe
     )
 }
 
-const BeyondInterior = ({subtitle, contentTitle, contentSubtitle, image, anotherImage} : {subtitle ?: string, contentTitle?: string, contentSubtitle?: string, image: string, anotherImage: imageItem[]}) => {
+const BeyondInterior = ({subtitle, contentTitle, contentSubtitle, heroImage, anotherImage} : {subtitle ?: string, contentTitle?: string, contentSubtitle?: string, heroImage?: string, anotherImage: imageItem[]}) => {
 
     return (
         <>
@@ -54,8 +60,14 @@ const BeyondInterior = ({subtitle, contentTitle, contentSubtitle, image, another
          {anotherImage.length > 0 && (
             <div className="flex flex-wrap gap-8 w-full px-28 mt-8">
               {anotherImage.map((data) => (
-                <div key={data.id} className="relative bg-yellow-200 w-[425px] h-72 rounded overflow-hidden">
-                  <Image src={data.img} alt={`Image ${data.id}`} fill className="object-cover"/>
+                <div key={data.id} className="flex flex-col w-[425px]">
+                  <div key={data.id} className="relative bg-yellow-200 w-[425px] h-72 rounded overflow-hidden">
+                    <Image src={data.img} alt={`Image ${data.id}`} fill className="object-cover"/>
+                  </div>
+                  <div className="flex flex-col w-full px-4 mt-2">
+                    <h2 className="text-xl text-gray-800 mb-2">Simplicity in Boldness Emblem</h2>
+                    <p className="text-base text-gray-800">The Vellfire emblem detail are designed to strengthen the extravagance look on every journey.</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -64,47 +76,170 @@ const BeyondInterior = ({subtitle, contentTitle, contentSubtitle, image, another
     )
 } 
 
-const BeyondSafety = ({}) => {
+const BeyondSafety = ({heroImage, subtitle, contentTitle, contentSubtitle, AnotherImage} : {heroImage ?: string, subtitle?: string, contentTitle ?: string, contentSubtitle?: string, AnotherImage: imageItem[]}) => {
     return (
         <>
           <h2 className="self-center text-4xl font-bold mt-24">Beyond Safety</h2>
-          <p className="text-sm text-gray-600 mt-4"></p>
+          <p className="text-sm text-gray-600 mt-4">{subtitle}</p>
           <div className="relative w-5/6 h-[34rem] bg-yellow-400 mt-6">
-              <Image src={'/assets/BmwM2.jpg'} alt="Beyond Image" fill className="object-cover"/>
+            <Image src={'/assets/BmwM2.jpg'} alt="Beyond Image" fill className="object-cover"/>
           </div>
+          <div className="flex flex-col w-full px-24 mt-2">
+            <h2 className="text-xl text-gray-800">Extravagant Cabin</h2>
+            <p className="text-base text-gray-800">Exquisite cabin with well-tailored seats made from high quality fabric with first class leather on the side, to enhance your comfort, the seats could be arranged easily.</p> 
+          </div>
+          {AnotherImage.length > 0 && (
+            <div className="flex flex-wrap gap-8 w-full px-28 mt-8">
+              {AnotherImage.map((data) => (
+                <div key={data.id} className="flex flex-col w-[425px]">
+                  <div key={data.id} className="relative bg-yellow-200 w-[425px] h-72 rounded overflow-hidden">
+                    <Image src={data.img} alt={`Image ${data.id}`} fill className="object-cover"/>
+                  </div>
+                  <div className="flex flex-col w-full px-4 mt-2">
+                    <h2 className="text-xl text-gray-800 mb-2">Simplicity in Boldness Emblem</h2>
+                    <p className="text-base text-gray-800">The Vellfire emblem detail are designed to strengthen the extravagance look on every journey.</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </>
     )
 }
 
-const BeyondPerformance = ({}) => {
+const BeyondPerformance = ({heroImage, subtitle, contentTitle, contentSubtitle, AnotherImage} : {heroImage ?: string | '', subtitle?: string, contentTitle ?: string, contentSubtitle?: string, AnotherImage: imageItem[]}) => {
     return (
-        <div className="">
-
-        </div>
+        <>
+          <h2 className="self-center text-4xl font-bold mt-24">Beyond Perfomance</h2>
+          <p className="text-sm text-gray-600 mt-4">{subtitle}</p>
+          <div className="relative w-5/6 h-[34rem] bg-yellow-400 mt-6">
+            <Image src={'/assets/BmwM2.jpg'} alt="Beyond Image" fill className="object-cover"/>
+          </div>
+          <div className="flex flex-col w-full px-24 mt-2">
+            <h2 className="text-xl text-gray-800">Extravagant Cabin</h2>
+            <p className="text-base text-gray-800">Exquisite cabin with well-tailored seats made from high quality fabric with first class leather on the side, to enhance your comfort, the seats could be arranged easily.</p> 
+          </div>
+          {AnotherImage ? (
+             <div className="flex flex-wrap gap-8 w-full px-28 mt-8">
+              {AnotherImage.map((data) => (
+                <div key={data.id} className="flex flex-col w-[425px]">
+                  <div key={data.id} className="relative bg-yellow-200 w-[425px] h-72 rounded overflow-hidden">
+                    <Image src={data.img} alt={`Image ${data.id}`} fill className="object-cover"/>
+                  </div>
+                  <div className="flex flex-col w-full px-4 mt-2">
+                    <h2 className="text-xl text-gray-800 mb-2">Simplicity in Boldness Emblem</h2>
+                    <p className="text-base text-gray-800">The Vellfire emblem detail are designed to strengthen the extravagance look on every journey.</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="">
+                <h2>None</h2>
+            </div>
+          ) }
+        </>
     )
 }
 
-const BeyondConnected = ({}) => {
+const BeyondConnected = ({heroImage, subtitle, contentTitle, contentSubtitle, AnotherImage} : {heroImage : string | '', subtitle?: string, contentTitle ?: string, contentSubtitle?: string, AnotherImage: imageItem[]}) => {
     return (
-        <div className="">
-
-        </div>
+        <>
+          <h2 className="self-center text-4xl font-bold mt-12">Beyond Connected</h2>
+            <p className="text-sm text-gray-600 mt-4">{subtitle}</p>
+            <div className="relative w-5/6 h-[34rem] bg-yellow-400 mt-6">
+              <Image src={heroImage} alt="Beyond Image" fill className="object-cover"/>
+            </div>
+            <div className="flex flex-col w-full px-24 mt-2">
+              <h2 className="text-xl text-gray-800">{contentTitle}</h2>
+              <p className="text-base text-gray-800">{contentSubtitle}</p> 
+            </div>
+            {AnotherImage.length > 0 && (
+              <div className="flex  flex-wrap gap-8 w-full px-28 mt-8">
+                {AnotherImage.map((data) => (
+                  <div key={data.id} className="flex flex-col w-[425px]">
+                    <div key={data.id}  className="relative bg-yellow-200 w-[425px] h-72 rounded overflow-hidden">
+                      <Image src={data.img} alt={`Image ${data.id}`} fill className="object-cover"/>
+                    </div>
+                    <div className="flex flex-col w-full px-4 mt-2">
+                      <h2 className="text-xl text-gray-800 mb-2">Simplicity in Boldness Emblem</h2>
+                      <p className="text-base text-gray-800">The Vellfire emblem detail are designed to strengthen the extravagance look on every journey.</p>
+                    </div>
+                  </div>
+                ))}
+              </div>    
+            )}
+        </>
     )
 }
 
-const BeyondAccessoris = ({}) => {
+const BeyondAccessoris = ({heroImage, subtitle, contentTitle, contentSubtitle, AnotherImage} : {heroImage ?: string | '', subtitle?: string, contentTitle ?: string, contentSubtitle?: string, AnotherImage: imageItem[]}) => {
     return (
-        <div className="">
-
-        </div>
+        <>
+          <h2 className="self-center text-4xl font-bold mt-24">Beyond Accessoris</h2>
+          <p className="text-sm text-gray-600 mt-4">{subtitle}</p>
+          <div className="relative w-5/6 h-[34rem] bg-yellow-400 mt-6">
+            <Image src={'/assets/BmwM2.jpg'} alt="Beyond Image" fill className="object-cover"/>
+          </div>
+          <div className="flex flex-col w-full px-24 mt-2">
+            <h2 className="text-xl text-gray-800">Extravagant Cabin</h2>
+            <p className="text-base text-gray-800">Exquisite cabin with well-tailored seats made from high quality fabric with first class leather on the side, to enhance your comfort, the seats could be arranged easily.</p> 
+          </div>
+          {AnotherImage ? (
+             <div className="flex flex-wrap gap-8 w-full px-28 mt-8">
+              {AnotherImage.map((data) => (
+                <div key={data.id} className="flex flex-col w-[425px]">
+                  <div key={data.id} className="relative bg-yellow-200 w-[425px] h-72 rounded overflow-hidden">
+                    <Image src={data.img} alt={`Image ${data.id}`} fill className="object-cover"/>
+                  </div>
+                  <div className="flex flex-col w-full px-4 mt-2">
+                    <h2 className="text-xl text-gray-800 mb-2">Simplicity in Boldness Emblem</h2>
+                    <p className="text-base text-gray-800">The Vellfire emblem detail are designed to strengthen the extravagance look on every journey.</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="">
+                <h2>None</h2>
+            </div>
+          ) }
+        </>
     )
 }
 
-const ColorCar = ({}) => {
+const ColorCar = ({heroImage, subtitle, contentTitle, contentSubtitle, AnotherImage} : {heroImage ?: string | '', subtitle?: string, contentTitle ?: string, contentSubtitle?: string, AnotherImage: imageItem[]}) => {
     return (
-        <div className="">
-
-        </div>
+       <>
+          <h2 className="self-center text-4xl font-bold mt-24">Color Car</h2>
+          <p className="text-sm text-gray-600 mt-4">{subtitle}</p>
+          <div className="relative w-5/6 h-[34rem] bg-yellow-400 mt-6">
+            <Image src={'/assets/BmwM2.jpg'} alt="Beyond Image" fill className="object-cover"/>
+          </div>
+          <div className="flex flex-col w-full px-24 mt-2">
+            <h2 className="text-xl text-gray-800">Extravagant Cabin</h2>
+            <p className="text-base text-gray-800">Exquisite cabin with well-tailored seats made from high quality fabric with first class leather on the side, to enhance your comfort, the seats could be arranged easily.</p> 
+          </div>
+          {AnotherImage ? (
+             <div className="flex flex-wrap gap-8 w-full px-28 mt-8">
+              {AnotherImage.map((data) => (
+                <div key={data.id} className="flex flex-col w-[425px]">
+                  <div key={data.id} className="relative bg-yellow-200 w-[425px] h-72 rounded overflow-hidden">
+                    <Image src={data.img} alt={`Image ${data.id}`} fill className="object-cover"/>
+                  </div>
+                  <div className="flex flex-col w-full px-4 mt-2">
+                    <h2 className="text-xl text-gray-800 mb-2">Simplicity in Boldness Emblem</h2>
+                    <p className="text-base text-gray-800">The Vellfire emblem detail are designed to strengthen the extravagance look on every journey.</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="">
+                <h2>None</h2>
+            </div>
+          ) }
+        </>
     )
 }
 

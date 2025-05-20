@@ -5,13 +5,28 @@ import { CategoryCar } from "@/lib/data";
 import CardProduct from "./Cardproduct";
 import { MdFileDownload } from "react-icons/md";
 import { MaxWidthWrapper } from "../MaxWidthWrapper";
+import { getDataCar } from "@/services/index.service";
 
 export default function CatalogCar () {
     const [StateCategory, SetStateCategory] = useState<string>('All');
+    const [CarData, SetCarData] = useState<any[]>([]);
 
-    const handleCategory = (category: string) => {
-        SetStateCategory(category)
+    const getData = async (category: string) => {
+      try {
+        const car = await getDataCar(category);
+        SetCarData(car.data);
+      }catch(err){
+        throw new Error('Error Getting Data!');
+      }
     }
+
+    useEffect(() => {
+      getData(StateCategory);
+    }, [StateCategory])
+
+    const handleCategory = async (category: string) => {
+        SetStateCategory(category);
+    } 
 
     return (
       <MaxWidthWrapper className="mt-12 md:mt-16 px-4 sm:px-0">
@@ -25,9 +40,16 @@ export default function CatalogCar () {
                 ))}
               </div>
               <div className="flex gap-2 mt-8 flex-wrap mb-12">
-                <CardProduct/>
-                <CardProduct/>
-                <CardProduct/>
+                {CarData.length > 0 ? (
+                  <div>
+                    {CarData.map((data) => (
+                      <CardProduct key={data.id} slug={data.slug} name={data.name} category={data.category} 
+                      carImage={data.carImage} price={data.price}/>
+                    ))}
+                  </div>
+                ) : (
+                  <h2 className="text-center w-full font-semibold">Oops No Vehicle Found!</h2>
+                )}
               </div>
               <div className="flex self-center items-center w-fit bg-pink-600 hover:bg-pink-800 transition-all duration-200 py-3 px-6 gap-1 cursor-pointer">
                 <h2 className="font-semibold text-white">Unduh Daftar Harga</h2>

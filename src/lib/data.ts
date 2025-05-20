@@ -42,13 +42,44 @@ export const DataFooter = [
 //BIG DATA COY ANJAY MABAR!!!!
 
 export const dataCar = [
-    {id: 1, name: 'All New Vellfire HEV', category: 'MPV', price: 387000000, pdf: '', 
-        carImage: '/Cars/Testing.jpg', heroImage: '/Cars/Testing.jpg', subtitle: 'Discover every path with the next level luxury Toyota All New Alphard HEV along with Modellista design to contribute more for the environment.',  BeyondExterior: {
-            HeroImage: '/assets/BmwM2.jpg', contentTitle: 'Luxury Front Grille', contentSubtitle: 'The elegance and luxurious Front Grille design mark your presence wherever you go. (All Type)', anotherImage: [
-                {id: 1, img: '/assets/ToyotaAgya.jpg'}, {id: 2, img: '/assets/ToyotaAlphard.jpg'}, {id: 3, img: '/assets/ToyotaHilux.jpg'}, {id: 4, img: '/assets/ToyotaSpektakuler.jpg'},
+    {id: 1, name: 'All New Vellfire HEV', category: 'MPV', price: 387000000, pdf: '', slug: 'AllNewVellfireHEV', 
+        carImage: '/Cars/Testing.jpg', heroImage: '/Cars/Testing.jpg',  BeyondExterior: {
+            HeroImage: '/assets/BmwM2.jpg', subtitle: 'Discover every path with the next level luxury Toyota All New Alphard HEV along with Modellista design to contribute more for the environment.', contentTitle: 'Luxury Front Grille', contentSubtitle: 'The elegance and luxurious Front Grille design mark your presence wherever you go. (All Type)', anotherImage: [
+                {id: 1, img: '/assets/ToyotaAgya.jpg', title: '', subtitle: ''}, {id: 2, img: '/assets/ToyotaAlphard.jpg',  title: '', subtitle: ''}, {id: 3, img: '/assets/ToyotaHilux.jpg',  title: '', subtitle: ''}, {id: 4, img: '/assets/ToyotaSpektakuler.jpg',  title: '', subtitle: ''},
             ] 
+        },
+        beyondInterior : {
+            HeroImage: '', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '',  title: '', subtitle: ''}, {id: 2, img: '',  title: '', subtitle: ''}, {id: 3, img: '',  title: '', subtitle: ''},
+            ]
+        },
+        beyondSafety : {
+            HeroImage: '', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '',  title: '', subtitle: ''}, {id: 2, img: '',  title: '', subtitle: ''}, {id: 3, img: '',  title: '', subtitle: ''},
+            ]
+        },
+        beyondPerformance : {
+            HeroImage: '', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+               
+            ]
+        },
+        beyondConnected : {
+            HeroImage: '', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '',  title: '', subtitle: ''}, {id: 2, img: '',  title: '', subtitle: ''}, {id: 3, img: '',  title: '', subtitle: ''},
+            ]
+        },
+        beyondAccessoris : {
+            HeroImage: '', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+               
+            ]
+        },
+        ColorCar : {
+            Heroimage : '', AnotherImage : [
+                
+            ]
         }
-    }
+
+    },
 ]
 
 

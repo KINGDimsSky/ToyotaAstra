@@ -6,6 +6,9 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { dataCar } from "@/lib/data";
 
 export default function DetailedCar () {
+    const getDataCar = async () => {  
+      
+    }
 
     return (
         <div className="">
@@ -29,9 +32,14 @@ export default function DetailedCar () {
               </div>
               {dataCar.map((data) => (
                 <DescCar key={data.id}>
-                  <DescCar.BeyondExterior subtitle={data.subtitle} contentTitle={data.BeyondExterior.contentTitle}
+                  <DescCar.BeyondExterior subtitle={data.BeyondExterior.subtitle} contentTitle={data.BeyondExterior.contentTitle}
                   contentSubtitle={data.BeyondExterior.contentSubtitle} image={data.BeyondExterior.HeroImage} AnotherImage={data.BeyondExterior.anotherImage}/>
-                  <DescCar.BeyondInterior/>
+                  <DescCar.BeyondInterior anotherImage={data.BeyondExterior.anotherImage}/>
+                  <DescCar.BeyondSafety AnotherImage={data.BeyondExterior.anotherImage}/>
+                  <DescCar.BeyondPerformance AnotherImage={data.beyondPerformance.AnotherImage}/>
+                  <DescCar.beyondConnected heroImage={data.heroImage} AnotherImage={data.BeyondExterior.anotherImage}/>
+                  <DescCar.Accessoris AnotherImage={data.beyondAccessoris.AnotherImage}/>
+                  <DescCar.ColorCar AnotherImage={data.ColorCar.AnotherImage}/>
                 </DescCar>
               ))}
             </MaxWidthWrapper>
