@@ -41,6 +41,10 @@ export const DataFooter = [
 
 //BIG DATA COY ANJAY MABAR!!!!
 
+export const dataNews = [
+    {id: 1, title: 'Rally Monte-Carlo 2025: TOYOTA GAZOO Racing Memulai Musim WRC dengan Raihan Podium 1-2 Yang Dramatis', category: 'News & Event, Gazoo Racing', subtitle: 'Greatness Reinvented Hadir Dalam Balutan Excitement, Legendary Sports Car Toyota GR Supra Kini Tampil Lebih Bertenaga', author: 'KINGDimsSky', date: '22 September 2020', calendarDate: '07/02/2025', slug: 'RallyMonte-Carlo2025:TOYOTAGAZOORacingMemulaiMusimWRCdenganRaihanPodium1-2YangDramatis', HeroImage: '', content: ''}
+]
+
 export const dataCar = [
     {id: 1, name: 'All New Vellfire HEV', category: 'MPV', price: 387000000, pdf: '', slug: 'AllNewVellfireHEV', 
         carImage: '/Cars/Testing.jpg', heroImage: '/Cars/Testing.jpg',  BeyondExterior: {
