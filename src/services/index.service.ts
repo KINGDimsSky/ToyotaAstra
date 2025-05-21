@@ -9,11 +9,35 @@ export const getDataCar = async (category ?: string) => {
 } 
 
 export const GetDetailedCar = async (slug?: string) => {
-    const data = await fetch(`http://localhost:3000/api/detailedcar/?slug=${slug}`)
+    try {
+        const res = await fetch(`http://localhost:3000/api/detailedcar/?slug=${slug}`, {
+        cache: 'no-store'
+    })
+    const data = await res.json()
 
-    if (!data.ok){
-        throw new Error('Failed To Getting Vehicle Data!');
+    if (!res.ok || data.status !== 200) {
+        return null;
     }
 
-    return await data.json();
+      return data;
+    }catch(err){
+      console.error('Error fetching detailed car', err)
+    };
+}
+
+export const GetByCategoryNews = async (category: string) => {
+  try {
+    const res = await fetch(`http://localhost:3000/api/news/?category=${category}`, {
+      cache: 'no-store'
+    });
+    return await res.json();
+  } catch (err) {
+      console.error('Error fetching news by category:', err);
+    return { status: 500, message: 'Fetch Error', data: [] };
+  }
+}
+
+
+export const GetAllDataNews = async () => {
+
 }

@@ -3,7 +3,6 @@ import { MaxWidthWrapper } from "@/components/MaxWidthWrapper";
 import Image from "next/image";
 import { FaCar, FaDownload, FaShoppingCart } from "react-icons/fa";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
-import { dataCar } from "@/lib/data";
 import { GetDetailedCar } from "@/services/index.service";
 
 interface URLParams{
@@ -16,6 +15,16 @@ export default async function DetailedCar ({params} : URLParams) {
     const slug = params.slug;
     const car = await GetDetailedCar(slug)
     console.log (car)
+
+    if (!car || !car.data) {
+      return (
+      <div className="min-h-screen flex flex-col items-center justify-center text-center px-4">
+        <h1 className="text-2xl font-bold text-red-600">Mobil Tidak Ditemukan</h1>
+        <p className="text-gray-600 mt-2">Maaf, data mobil <strong>{slug}</strong> tidak tersedia.</p>
+        <a href="/" className="mt-4 text-blue-500 hover:underline">Kembali ke Beranda</a>
+      </div>
+      )
+    }
 
     return (
         <div className="">

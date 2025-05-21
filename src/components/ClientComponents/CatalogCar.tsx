@@ -10,11 +10,13 @@ import { getDataCar } from "@/services/index.service";
 export default function CatalogCar () {
     const [StateCategory, SetStateCategory] = useState<string>('All');
     const [CarData, SetCarData] = useState<any[]>([]);
+    const [IsLoading, SetIsLoading] = useState<boolean>(true)
 
     const getData = async (category: string) => {
       try {
         const car = await getDataCar(category);
         SetCarData(car.data);
+        SetIsLoading(false)
       }catch(err){
         throw new Error('Error Getting Data!');
       }
@@ -41,14 +43,24 @@ export default function CatalogCar () {
               </div>
               <div className="flex gap-2 mt-8 flex-wrap mb-12">
                 {CarData.length > 0 ? (
-                  <div>
+                  <div className="flex gap-2 flex-wrap mb-12">
                     {CarData.map((data) => (
                       <CardProduct key={data.id} slug={data.slug} name={data.name} category={data.category} 
                       carImage={data.carImage} price={data.price}/>
                     ))}
                   </div>
                 ) : (
-                  <h2 className="text-center w-full font-semibold">Oops No Vehicle Found!</h2>
+                  <div>
+                    {IsLoading ? (
+                      <div className="flex gap-6">
+                        {[...Array(3)].map((_, i) => (
+                         <div key={i} className="w-[13.5rem] md:w-[23rem] h-[18rem] bg-gray-200 animate-pulse rounded-lg" />
+                     ))}
+                      </div>
+                    ) : (
+                      <h2 className="text-center w-full font-semibold">Oops No Vehicle Found!</h2>
+                    )}
+                  </div>
                 )}
               </div>
               <div className="flex self-center items-center w-fit bg-pink-600 hover:bg-pink-800 transition-all duration-200 py-3 px-6 gap-1 cursor-pointer">
