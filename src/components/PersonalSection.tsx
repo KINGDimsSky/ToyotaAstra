@@ -19,7 +19,7 @@ export default function PersonalSection() {
       <MaxWidthWrapper className="mt-6 md:mt-12 py-2 px-4 sm:px-0">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           <div className="flex flex-col items-center lg:items-start">
-            <div className="relative h-72 w-full sm:h-80 sm:w-80 lg:h-96 lg:w-96 rounded-xl overflow-hidden bg-yellow-400 border border-gray-400">
+            <div className="relative h-72 w-full sm:h-80 sm:w-80 lg:h-[28rem] lg:w-96 rounded-xl overflow-hidden bg-yellow-400 border border-gray-400">
               <Image src={'/personal/Raysan1.jpg'} alt="Personal Image" fill className="object-cover object-top"/>
             </div>
             <div className="mt-8 lg:mt-12 text-center lg:text-left">
@@ -42,7 +42,7 @@ export default function PersonalSection() {
           <div className="flex flex-col">
             <p className="text-2xl sm:text-4xl font-bold uppercase text-center lg:text-left"> Plaza Toyota Gading Serpong</p>
             <p className="mt-2 sm:mt-4 text-gray-700 text-sm sm:text-base text-center lg:text-left">JL Raya Boulevard, Kav. 5-11, Gading Serpong, Summarecon, Tangerang, Curug Sangereng, Kelapa Dua, Tangerang Regency, Banten 15810</p>
-            <div className="relative w-full h-80 sm:h-52 lg:h-72 rounded-xl sm:rounded-2xl bg-amber-300 mt-4 overflow-hidden">
+            <div className="relative w-full h-80 sm:h-52 lg:h-96 rounded-xl sm:rounded-2xl bg-amber-300 mt-4 overflow-hidden">
               <Image src={'/personal/Raysanyellowcar.jpg'} alt="Raysan" fill className="object-cover object-left-top"/>
             </div>
             <div className="hidden md:flex flex-col sm:flex-row gap-4 items-center sm:items-stretch mt-6">

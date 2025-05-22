@@ -1,7 +1,10 @@
 import CardNews from "@/components/ClientComponents/CardNews";
 import { MaxWidthWrapper } from "@/components/MaxWidthWrapper";
+import { GetNews } from "@/services/index.service";
 import { FaArrowRight } from "react-icons/fa";
-export default function Berita () {
+export default async function Berita () {
+    const news = await GetNews();
+    console.log (news.data)
 
     return (
         <MaxWidthWrapper className="mt-4 md:mt-8 mb-8 md:mb-12">
@@ -15,9 +18,15 @@ export default function Berita () {
               <h2 className="text-4xl font-bold tracking-wide">Latest News</h2>
             </div>
             <div className="flex justify-center w-full flex-wrap gap-4 mt-6">
-              {[...Array(8)].map((_, index) => (
-                <CardNews key={index} className="w-full md:w-[22.3rem]"/>
-              ))}
+              {news.data.length >  0 ? (
+                <div>
+                  {news.data.map((data: any) => (
+                    <CardNews key={data.id} title={data.title} category={data.category} calendarDate={data.calendarDate} heroImage={data.HeroImage} slug={data.slug} className=""/>
+                  ))}
+                </div>
+              ) : (
+                <h2 className="h-96 flex items-center justify-center text-2xl font-semibold">Oops No News Data Found!</h2>
+              )}
             </div>
           </div>
         </MaxWidthWrapper>

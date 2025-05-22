@@ -11,7 +11,7 @@ export default function Home () {
   return (
     <Fragment>
       <Carousel/>
-      <div className="bg-gray-100 pb-12 md:pb-24">
+      <div className="bg-gray-50 pb-12 md:pb-24">
         <PersonalSection/>
       </div>
       <CatalogCar/>

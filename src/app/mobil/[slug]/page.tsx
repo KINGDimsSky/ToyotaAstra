@@ -12,9 +12,10 @@ interface URLParams{
 }
 
 export default async function DetailedCar ({params} : URLParams) {
-    const slug = params.slug;
+    const {slug} = params;
     const car = await GetDetailedCar(slug)
     console.log (car)
+    console.log (slug)
 
     if (!car || !car.data) {
       return (
@@ -29,7 +30,7 @@ export default async function DetailedCar ({params} : URLParams) {
     return (
         <div className="">
            <div className="h-[45vh] md:h-[90vh] w-full flex items-center justify-center relative overflow-hidden bg-yellow-200">
-           <Image src={car.data.heroImage} alt="Image" fill className="object-cover"/>
+           <Image src={car.data.heroImage} alt={car.data.name} fill className="object-cover"/>
            </div>
            <div className="flex w-full bg-gray-950 py-3 px-4 sm:px-0">
               <MaxWidthWrapper className="flex  sm:flex-row justify-between items-center gap-2 sm:gap-0">

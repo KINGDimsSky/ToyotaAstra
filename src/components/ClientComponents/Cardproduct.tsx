@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaCloudDownloadAlt, FaFileContract } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 export default function CardProduct ({name, category, price, carImage, slug} : {name: string, category: string, price: number, carImage: string, slug: string}) {
@@ -12,9 +13,9 @@ export default function CardProduct ({name, category, price, carImage, slug} : {
                   </a>
                </div>
               <div className="absolute flex flex-col left-3 sm:left-4.5 bottom-2 sm:bottom-3.5 text-white">
-                <h2 className="text-xs sm:text-sm">Mulai Dari</h2>
-               <h2 className="text-xl sm:text-2xl md:text-3xl tracking-wide font-semibold">
-                  {new Intl.NumberFormat("id-ID", {
+                <h2 className="text-xs sm:text-xs">Mulai dari</h2>
+               <h2 className="text-xl sm:text-xl md:text-2xl tracking-wide font-semibold">
+                 {new Intl.NumberFormat("id-ID", {
                     style: "currency",
                     currency: "IDR",
                     minimumFractionDigits: 0,
@@ -24,12 +25,18 @@ export default function CardProduct ({name, category, price, carImage, slug} : {
            </div>
            <div className="flex flex-col p-3 sm:p-4">
               <a href={`/mobil/${slug}`} className="font-semibold text-xl sm:text-2xl mb-2 sm:mb-4 cursor-pointer hover:text-pink-600">{name}</a>
-              <div className="w-full h-0.5 bg-gray-200"></div>
+              <div className="w-full h-[1px] bg-gray-200"></div>
               <div className="flex justify-between items-center mt-2 sm:mt-4">
                 <h2 className="text-gray-600 tracking-tight text-xs sm:text-sm">{category}</h2>
-                <div className="flex items-center hover:text-pink-600 cursor-pointer">
-                  <h2 className="font-semibold text-xs sm:text-sm">Get Your Offer</h2>
-                  <MdKeyboardArrowRight size={20} className="sm:w-6 sm:h-6"/>
+                <div className="flex items-center gap-3">
+                  <div className="flex gap-1 items-center hover:text-pink-600 cursor-pointer">
+                    <h2 className="font-semibold text-xs sm:text-sm">Get Your Offer</h2>
+                    <FaFileContract size={20} className="sm:w-4 sm:h-4 group-[]:"/>
+                  </div>
+                  <div className="flex gap-1 items-center hover:text-pink-600 cursor-pointer">
+                    <a className="font-semibold text-xs sm:text-sm">Brosur</a>
+                    <FaCloudDownloadAlt size={20} className="sm:w-5 sm:h-5"/>
+                  </div>
                 </div>
               </div>
            </div>

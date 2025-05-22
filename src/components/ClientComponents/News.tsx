@@ -40,7 +40,7 @@ export default function News() {
 
     return (
         <div className="flex flex-col mt-24 mb-24 px-4 sm:px-12">
-            <h2 className="font-semibold text-4xl self-center">Discover The Latest</h2>
+            <h2 className="font-bold text-4xl self-center">Discover The Latest</h2>
             <div className="flex gap-2 sm:gap-4 self-center mt-6 flex-wrap justify-center">
               {NavNews.map((data) => (
                 <button key={data.id} onClick={() => HandleClicker(data.name)} className={`py-2 px-3 sm:px-4 text-sm ${NewsNav === data.name ? "bg-pink-600 text-white" : "text-black hover:bg-pink-600 hover:text-white"} cursor-pointer rounded-lg transition-all duration-300`}>
@@ -53,7 +53,7 @@ export default function News() {
                 <div ref={scrollContainerRef} className="flex overflow-x-auto scrollbar-hide gap-6 px-2 py-4 snap-x snap-mandatory">
                   {News.map((data) => (
                     <div key={data.id} className="flex-shrink-0 snap-start">
-                      <CardNews className="w-[22rem] md:w-[28rem]"/>
+                      <CardNews title={data.title} category={data.category} calendarDate={data.calendarDate} heroImage={data.HeroImage} slug={data.slug} className="w-[22rem] md:w-[28rem]"/>
                     </div>
                   ))}
                 </div>

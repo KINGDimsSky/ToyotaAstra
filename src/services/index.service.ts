@@ -37,7 +37,13 @@ export const GetByCategoryNews = async (category: string) => {
   }
 }
 
-
-export const GetAllDataNews = async () => {
-
+export const GetNews = async (slug ?: string) => {
+  try{
+    const res = await fetch(slug ? `http://localhost:3000/api/news/?slug=${slug}` : 'http://localhost:3000/api/news/', {
+      cache : 'no-store'
+    });
+    return await res.json();
+  }catch{
+    console.error('Error Getting News Data!');
+  }
 }
