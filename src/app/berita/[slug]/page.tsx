@@ -3,14 +3,15 @@ import { GetNews } from "@/services/index.service";
 import Image from "next/image";
 import { FaArrowRight, FaClock, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
+import { Metadata } from "next";
 
-interface PageProps {
+type Props = {
   params: {
     slug: string;
   }
 }
 
-export default async function DetailedNews ({params} : PageProps) {
+export default async function DetailedNews ({params} : Props) {
     const {slug} = params;
     const news = await GetNews(slug);
     const {data} = news;
