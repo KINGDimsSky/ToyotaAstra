@@ -4,13 +4,13 @@ import Image from "next/image";
 import { FaArrowRight, FaClock, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 
-interface GetSlug {
+interface PageProps {
   params: {
     slug: string;
   }
 }
 
-export default async function DetailedNews ({params} : GetSlug) {
+export default async function DetailedNews ({params} : PageProps) {
     const {slug} = params;
     const news = await GetNews(slug);
     const {data} = news;
