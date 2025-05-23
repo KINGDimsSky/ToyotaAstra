@@ -5,16 +5,17 @@ import Image from "next/image";
 import { FaArrowRight, FaClock, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 
-interface Params {
-  slug: string;
+export async function generateStaticParams() {
+  const slugs = ['berita-1', 'berita-2'];
+  return slugs.map(slug => ({ slug }));
 }
 
 interface Props {
-  params: Params;
+  params: Promise<{ slug: string }>;
 }
 
 export default async function DetailedNews({ params }: Props) {
-  const { slug } = params;
+  const { slug } = await params;
   const news = await GetNews(slug);
 
   if (!news || !news.data) {
@@ -25,7 +26,7 @@ export default async function DetailedNews({ params }: Props) {
 
   return (
     <MaxWidthWrapper className="mt-6 md:mt-12">
-      {/* Kode JSX mu di sini */}
+      {/* ... JSX sama seperti kode kamu ... */}
       <div className="flex flex-col min-h-screen">
         <div className="flex gap-2 items-center">
           <a href="/" className="text-gray-700 text-sm hover:text-gray-950">Beranda</a>
