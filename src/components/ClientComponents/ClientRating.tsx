@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 interface Testimonial {
@@ -85,12 +86,12 @@ export default function ClientRating() {
             {testimonials.map((testimonial, index) => (
               <div key={testimonial.id} className={`absolute inset-0 transition-all duration-500 ease-in-out ${index === currentIndex ? 'opacity-100 translate-x-0' :  direction === 'right' ? (index < currentIndex ? '-translate-x-full opacity-0' : 'translate-x-full opacity-0') : (index > currentIndex ? 'translate-x-full opacity-0' : '-translate-x-full opacity-0')}`}>
                 <div className="h-full bg-white rounded-xl shadow-xl overflow-hidden flex flex-col">
-                  <div className="absolute top-8 left-8 text-blue-100 text-7xl font-serif">"</div>
+                  <div className="absolute top-8 left-8 text-blue-100 text-7xl font-serif">&quot;</div>
                   <div className="p-12 pt-20 flex-1 flex flex-col">
                     <p className="text-xl text-gray-700 mb-8 flex-1">{testimonial.message}</p>
                     <div className="border-t border-gray-100 pt-6">
                       <div className="flex items-center">
-                        <img src={testimonial.avatar} alt={testimonial.name} className="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"/>
+                        <Image src={testimonial.avatar} alt={testimonial.name} className="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"/>
                         <div className="ml-4">
                           <div className="flex mb-1">
                             {[...Array(5)].map((_, i) => (
