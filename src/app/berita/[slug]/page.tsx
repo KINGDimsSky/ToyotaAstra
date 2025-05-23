@@ -11,22 +11,25 @@ export async function generateStaticParams() {
 }
 
 interface Props {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }
 
 export default async function DetailedNews({ params }: Props) {
-  const { slug } = await params;
+  const { slug } = params;
   const news = await GetNews(slug);
 
   if (!news || !news.data) {
-    return <div className="text-center text-red-600">Berita tidak ditemukan</div>;
+    return (
+      <MaxWidthWrapper className="mt-6 md:mt-12">
+        <div className="text-center text-red-600 py-20">Berita tidak ditemukan</div>
+      </MaxWidthWrapper>
+    );
   }
 
   const data = news.data;
 
   return (
     <MaxWidthWrapper className="mt-6 md:mt-12">
-      {/* ... JSX sama seperti kode kamu ... */}
       <div className="flex flex-col min-h-screen">
         <div className="flex gap-2 items-center">
           <a href="/" className="text-gray-700 text-sm hover:text-gray-950">Beranda</a>
@@ -49,13 +52,20 @@ export default async function DetailedNews({ params }: Props) {
             </p>
           </div>
           <div className="relative w-full md:w-4/5 h-96 bg-cyan-400 mt-6">
-            <Image src={'/News/GazooRacing.jpg'} alt="News Image" fill className="object-cover" />
+            <Image 
+              src={'/News/GazooRacing.jpg'} 
+              alt="News Image" 
+              fill 
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 80vw"
+            />
           </div>
           <p className="mt-4 text-gray-800">Sumber: toyota.astra.co.id</p>
           <h2 className="text-3xl text-center font-semibold mt-6 w-full md:w-3/4">{data.subtitle}</h2>
-          <div className="mt-10 text-sm w-full md:w-4/5 tracking-wider mb-12">
-            <h2>{data.content}</h2>
-          </div>
+          <div 
+            className="mt-10 text-sm w-full md:w-4/5 tracking-wider mb-12"
+            dangerouslySetInnerHTML={{ __html: data.content }}
+          />
           <div className="flex gap-2 mt-12 mb-6 items-center">
             <p className="text-sm text-gray-600">SHARE NEWS: </p>
             <div className="flex gap-3">
@@ -67,7 +77,12 @@ export default async function DetailedNews({ params }: Props) {
           </div>
           <div className="flex py-4 px-12 mb-24 bg-gray-100 w-full md:w-4/5 gap-4">
             <div className="relative w-24 h-24">
-              <Image src={'/icons/Users.jpg'} alt="Users" fill />
+              <Image 
+                src={'/icons/Users.jpg'} 
+                alt="Users" 
+                fill
+                sizes="96px"
+              />
             </div>
             <div className="flex flex-col">
               <h2 className="text-xs uppercase text-gray-700 font-semibold">Author</h2>
