@@ -91,7 +91,7 @@ export default function ClientRating() {
                     <p className="text-xl text-gray-700 mb-8 flex-1">{testimonial.message}</p>
                     <div className="border-t border-gray-100 pt-6">
                       <div className="flex items-center">
-                        <Image src={testimonial.avatar} alt={testimonial.name} className="w-14 h-14 rounded-full object-cover border-2 border-white shadow-md"/>
+                        <Image width={44} height={44} src={testimonial.avatar} alt={testimonial.name} className="rounded-full object-cover border-2 border-white shadow-md"/>
                         <div className="ml-4">
                           <div className="flex mb-1">
                             {[...Array(5)].map((_, i) => (

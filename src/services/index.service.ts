@@ -37,13 +37,18 @@ export const GetByCategoryNews = async (category: string) => {
   }
 }
 
-export const GetNews = async (slug ?: string) => {
-  try{
-    const res = await fetch(slug ? `http://localhost:3000/api/news/?slug=${slug}` : 'http://localhost:3000/api/news/', {
-      cache : 'no-store'
-    });
-    return await res.json();
-  }catch{
-    console.error('Error Getting News Data!');
+export const GetNews = async (slug?: string) => {
+  try {
+    const res = await fetch(
+      slug
+        ? `http://localhost:3000/api/news?slug=${slug}`
+        : 'http://localhost:3000/api/news',
+      { cache: 'no-store' }
+    );
+    if (!res.ok) throw new Error('Failed to fetch news');
+    return await res.json(); // Pastikan return bentuknya { data: {...} }
+  } catch (error) {
+    console.error('Error Getting News Data:', error);
+    return null;  // Kalau error, return null agar mudah dicek
   }
-}
+};
