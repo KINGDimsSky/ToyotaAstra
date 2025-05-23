@@ -50,12 +50,12 @@ export default async function DetailedCar ({params} : URLParams) {
                 <DescCar key={car.data.id}>
                   <DescCar.BeyondExterior subtitle={car.data.BeyondExterior.subtitle} contentTitle={car.data.BeyondExterior.contentTitle}
                   contentSubtitle={car.data.BeyondExterior.contentSubtitle} image={car.data.BeyondExterior.HeroImage} AnotherImage={car.data.BeyondExterior.anotherImage}/>
-                  <DescCar.BeyondInterior anotherImage={car.data.BeyondExterior.anotherImage}/>
-                  <DescCar.BeyondSafety AnotherImage={car.data.BeyondExterior.anotherImage}/>
-                  <DescCar.BeyondPerformance AnotherImage={car.data.beyondPerformance.AnotherImage}/>
-                  <DescCar.beyondConnected heroImage={car.data.heroImage} AnotherImage={car.data.BeyondExterior.anotherImage}/>
-                  <DescCar.Accessoris AnotherImage={car.data.beyondAccessoris.AnotherImage}/>
-                  <DescCar.ColorCar AnotherImage={car.data.ColorCar.AnotherImage}/>
+                  <DescCar.BeyondInterior heroImage={car.data.beyondInterior.HeroImage} anotherImage={car.data.BeyondExterior.anotherImage}/>
+                  <DescCar.BeyondSafety heroImage={car.data.beyondSafety.HeroImage} AnotherImage={car.data.BeyondExterior.anotherImage}/>
+                  <DescCar.BeyondPerformance heroImage={car.data.beyondPerformance.HeroImage} AnotherImage={car.data.beyondPerformance.AnotherImage}/>
+                  <DescCar.beyondConnected heroImage={car.data.beyondConnected.HeroImage} AnotherImage={car.data.BeyondExterior.anotherImage}/>
+                  <DescCar.Accessoris heroImage={car.data.beyondAccessoris.HeroImage} AnotherImage={car.data.beyondAccessoris.AnotherImage}/>
+                  <DescCar.ColorCar heroImage={car.data.ColorCar.Heroimage} AnotherImage={car.data.ColorCar.AnotherImage}/>
                 </DescCar>
             </MaxWidthWrapper>
         </div>

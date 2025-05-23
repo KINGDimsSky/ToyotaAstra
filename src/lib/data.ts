@@ -5,6 +5,8 @@ export const dataBadge = [
     {id: 8, title: 'Ready Stock', icon: 'LuListTodo'}, {id: 9, title: 'Bunga Ringan', icon: 'FaMoneyCheckAlt'}
 ]
 
+export const defaultImage = '/icons/NoImage.jpg'
+
 export const CategoryCar = [
     {id: 1, name: 'All'}, {id: 2, name: 'MPV'}, {id: 3, name: 'SUV'}, {id: 4, name: 'HatchBack'},
     {id: 5, name: 'Sedan'}, {id: 6, name: 'Commercial'}
@@ -53,32 +55,32 @@ export const dataCar = [
             ] 
         },
         beyondInterior : {
-            HeroImage: '', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
-                {id: 1, img: '',  title: '', subtitle: ''}, {id: 2, img: '',  title: '', subtitle: ''}, {id: 3, img: '',  title: '', subtitle: ''},
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
             ]
         },
         beyondSafety : {
-            HeroImage: '', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
-                {id: 1, img: '',  title: '', subtitle: ''}, {id: 2, img: '',  title: '', subtitle: ''}, {id: 3, img: '',  title: '', subtitle: ''},
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
             ]
         },
         beyondPerformance : {
-            HeroImage: '', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
                
             ]
         },
         beyondConnected : {
-            HeroImage: '', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
-                {id: 1, img: '',  title: '', subtitle: ''}, {id: 2, img: '',  title: '', subtitle: ''}, {id: 3, img: '',  title: '', subtitle: ''},
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
             ]
         },
         beyondAccessoris : {
-            HeroImage: '', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
                
             ]
         },
         ColorCar : {
-            Heroimage : '', AnotherImage : [
+            Heroimage : '/', AnotherImage : [
                 
             ]
         }

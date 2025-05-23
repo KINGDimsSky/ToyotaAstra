@@ -1,5 +1,6 @@
 import { cn } from "@/lib";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CardNews ({className, title, slug, category, calendarDate, heroImage,} : {className ?: string, title: string, slug: string, category: string, calendarDate: string, heroImage: string }) {
     return (
@@ -13,7 +14,7 @@ export default function CardNews ({className, title, slug, category, calendarDat
               <h2 className="mt-2 font-semibold tracking-wide">{title}</h2>
             </div>
             <div className="flex px-4 cursor-pointer mb-4">
-              <a href={`/berita/${slug}`} className="p-2 w-full text-center border border-black rounded-xl font-semibold hover:bg-black hover:text-white">Find Out More</a>
+              <Link href={`/berita/${slug}`} className="p-2 w-full text-center border border-black rounded-xl font-semibold hover:bg-black hover:text-white">Find Out More</Link>
             </div>
         </div>
     )
