@@ -1,16 +1,17 @@
+import React from "react";
 import { MaxWidthWrapper } from "@/components/MaxWidthWrapper";
 import { GetNews } from "@/services/index.service";
 import Image from "next/image";
 import { FaArrowRight, FaClock, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
-export const dynamic = "force-dynamic"; // jika data dinamis, bisa dihilangkan jika SSG
 
-type Props = {
-  params: {
-    slug: string;
-  };
-};
+interface Params {
+  slug: string;
+}
 
+interface Props {
+  params: Params;
+}
 
 export default async function DetailedNews({ params }: Props) {
   const { slug } = params;
@@ -24,7 +25,7 @@ export default async function DetailedNews({ params }: Props) {
 
   return (
     <MaxWidthWrapper className="mt-6 md:mt-12">
-      {/* Konten sama seperti sebelumnya */}
+      {/* Kode JSX mu di sini */}
       <div className="flex flex-col min-h-screen">
         <div className="flex gap-2 items-center">
           <a href="/" className="text-gray-700 text-sm hover:text-gray-950">Beranda</a>
@@ -47,7 +48,7 @@ export default async function DetailedNews({ params }: Props) {
             </p>
           </div>
           <div className="relative w-full md:w-4/5 h-96 bg-cyan-400 mt-6">
-            <Image src={"/News/GazooRacing.jpg"} alt="News Image" fill className="object-cover" />
+            <Image src={'/News/GazooRacing.jpg'} alt="News Image" fill className="object-cover" />
           </div>
           <p className="mt-4 text-gray-800">Sumber: toyota.astra.co.id</p>
           <h2 className="text-3xl text-center font-semibold mt-6 w-full md:w-3/4">{data.subtitle}</h2>
@@ -65,7 +66,7 @@ export default async function DetailedNews({ params }: Props) {
           </div>
           <div className="flex py-4 px-12 mb-24 bg-gray-100 w-full md:w-4/5 gap-4">
             <div className="relative w-24 h-24">
-              <Image src={"/icons/Users.jpg"} alt="Users" fill />
+              <Image src={'/icons/Users.jpg'} alt="Users" fill />
             </div>
             <div className="flex flex-col">
               <h2 className="text-xs uppercase text-gray-700 font-semibold">Author</h2>
