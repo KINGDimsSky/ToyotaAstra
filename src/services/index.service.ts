@@ -12,10 +12,8 @@ export const getDataCar = async (category ?: string) => {
 
 export const GetDetailedCar = async (slug?: string) => {
     try {
-        const res = await fetch(`${getBaseUrl()}/api/detailedcar/?slug=${slug}`, {
-        cache: 'no-store'
-    })
-    const data = await res.json()
+        const res = await fetch(`${getBaseUrl()}/api/detailedcar/?slug=${slug}`)
+        const data = await res.json()
 
     if (!res.ok || data.status !== 200) {
         return null;
@@ -29,9 +27,7 @@ export const GetDetailedCar = async (slug?: string) => {
 
 export const GetByCategoryNews = async (category: string) => {
   try {
-    const res = await fetch(`${getBaseUrl()}/api/news/?category=${category}`, {
-      cache: 'no-store'
-    });
+    const res = await fetch(`${getBaseUrl()}/api/news/?category=${category}`);
     return await res.json();
   } catch (err) {
       console.error('Error fetching news by category:', err);
@@ -44,7 +40,7 @@ export const GetByCategoryNews = async (category: string) => {
 export async function GetNews(slug?: string) {
   try {
     const url = slug ? `${getBaseUrl()}/api/news/?slug=${slug}` : `${getBaseUrl()}/api/news/`;
-    const res = await fetch(url, { cache: 'no-store' });
+    const res = await fetch(url);
     if (!res.ok) throw new Error('Failed to fetch news');
     return await res.json();
   } catch (error) {
