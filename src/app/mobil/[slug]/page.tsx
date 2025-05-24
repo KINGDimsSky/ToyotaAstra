@@ -5,14 +5,12 @@ import { FaCar, FaDownload, FaShoppingCart } from "react-icons/fa";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { GetDetailedCar } from "@/services/index.service";
 
-interface URLParams{
-  params: {
-    slug: string;
-  }
+interface PageProps{
+  params: Promise<{slug: string;}>;
 }
 
-export default async function DetailedCar ({params} : URLParams) {
-    const {slug} = params;
+export default async function DetailedCar ({params} : PageProps) {
+    const {slug} = await params;
     const car = await GetDetailedCar(slug)
     console.log (car)
     console.log (slug)
