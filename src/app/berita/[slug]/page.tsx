@@ -5,89 +5,107 @@ import Image from "next/image";
 import { FaArrowRight, FaClock, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 
-export async function generateStaticParams() {
-  const slugs = ['berita-1', 'berita-2'];
-  return slugs.map(slug => ({ slug }));
+interface PageProps {
+  params: Promise<{ slug: string }>;
 }
 
-interface Props {
-  params: { slug: string };
-}
-
-export default async function DetailedNews({ params }: Props) {
-  const { slug } = params;
+export default async function DetailedNews({ params }: PageProps) {
+  const {slug} = await params
   const news = await GetNews(slug);
 
-  if (!news || !news.data) {
+  if (!news?.data) {
     return (
       <MaxWidthWrapper className="mt-6 md:mt-12">
-        <div className="text-center text-red-600 py-20">Berita tidak ditemukan</div>
+        <div className="text-center text-red-600 py-20">
+          Berita tidak ditemukan atau sedang dalam pemeliharaan
+        </div>
       </MaxWidthWrapper>
     );
   }
 
-  const data = news.data;
+  const { title, date, author, subtitle, content } = news.data;
 
   return (
     <MaxWidthWrapper className="mt-6 md:mt-12">
       <div className="flex flex-col min-h-screen">
+        {/* Breadcrumb Navigation */}
         <div className="flex gap-2 items-center">
           <a href="/" className="text-gray-700 text-sm hover:text-gray-950">Beranda</a>
           <FaArrowRight className="w-2" />
           <a href="/berita" className="text-gray-700 text-sm hover:text-gray-950">Berita</a>
           <FaArrowRight className="w-2" />
-          <p className="text-gray-700 text-xs md:text-sm">{data.title}</p>
+          <p className="text-gray-700 text-xs md:text-sm line-clamp-1">{title}</p>
         </div>
-        <div className="flex mt-8">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight w-full md:w-2/3">{data.title}</h2>
+
+        {/* Judul Berita */}
+        <h1 className="text-3xl w-full md:w-4/5 md:text-4xl font-bold tracking-tight mt-8">{title}</h1>
+        <div className="w-full md:w-4/5 border-t border-gray-600 mt-4" />
+
+        {/* Metadata Berita */}
+        <div className="flex gap-2 mt-4 items-center">
+          <FaClock className="text-pink-500" />
+          <p className="text-sm text-gray-700">{date}</p>
+          <span>|</span>
+          <p className="text-sm text-gray-700">
+            Penulis: <span className="text-gray-950 font-medium">{author}</span>
+          </p>
         </div>
-        <div className="w-full md:w-4/5 border-t border-gray-600 mt-4"></div>
-        <div className="flex flex-col">
-          <div className="flex gap-2 mt-4 items-center">
-            <FaClock className="text-pink-500" />
-            <p className="text-sm text-gray-700">{data.date}</p>
-            <p> | </p>
-            <p className="text-sm text-gray-700">
-              PostedBy: <span className="text-gray-950">{data.author}</span>
-            </p>
+
+        {/* Gambar Utama */}
+        <div className="relative w-full md:w-4/5 aspect-video bg-gray-200 mt-6">
+          <Image
+            src="/News/GazooRacing.jpg"
+            alt={`Gambar Berita: ${title}`}
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 768px) 100vw, 80vw"
+          />
+        </div>
+        <p className="mt-2 text-sm text-gray-600">Sumber: toyota.astra.co.id</p>
+
+        {/* Konten Berita */}
+        <article className="prose prose-sm md:prose-base max-w-none mt-8 w-full md:w-4/5">
+          <h2 className="text-center text-2xl md:text-3xl font-semibold">{subtitle}</h2>
+          <div 
+            className="mt-6"
+            dangerouslySetInnerHTML={{ __html: content }}
+          />
+        </article>
+
+        {/* Share Options */}
+        <div className="flex flex-col gap-4 mt-12 mb-12">
+          <p className="text-sm text-gray-600">BAGIKAN BERITA:</p>
+          <div className="flex gap-4">
+            <button aria-label="Share via WhatsApp">
+              <FaSquareWhatsapp className="text-green-500 text-2xl hover:text-green-600" />
+            </button>
+            <button aria-label="Share via Twitter">
+              <FaTwitter className="text-blue-400 text-2xl hover:text-blue-500" />
+            </button>
+            <button aria-label="Share via Facebook">
+              <FaFacebook className="text-blue-600 text-2xl hover:text-blue-700" />
+            </button>
+            <button aria-label="Share via LinkedIn">
+              <FaLinkedin className="text-blue-800 text-2xl hover:text-blue-900" />
+            </button>
           </div>
-          <div className="relative w-full md:w-4/5 h-96 bg-cyan-400 mt-6">
-            <Image 
-              src={'/News/GazooRacing.jpg'} 
-              alt="News Image" 
-              fill 
+        </div>
+
+        {/* Author Box */}
+        <div className="flex items-center gap-4 p-6 bg-gray-100 rounded-lg mb-12 w-full md:w-4/5">
+          <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden">
+            <Image
+              src="/icons/Users.jpg"
+              alt={`Foto ${author}`}
+              fill
               className="object-cover"
-              sizes="(max-width: 768px) 100vw, 80vw"
+              sizes="(max-width: 768px) 64px, 80px"
             />
           </div>
-          <p className="mt-4 text-gray-800">Sumber: toyota.astra.co.id</p>
-          <h2 className="text-3xl text-center font-semibold mt-6 w-full md:w-3/4">{data.subtitle}</h2>
-          <div 
-            className="mt-10 text-sm w-full md:w-4/5 tracking-wider mb-12"
-            dangerouslySetInnerHTML={{ __html: data.content }}
-          />
-          <div className="flex gap-2 mt-12 mb-6 items-center">
-            <p className="text-sm text-gray-600">SHARE NEWS: </p>
-            <div className="flex gap-3">
-              <FaSquareWhatsapp className="text-green-400 w-6 h-6 cursor-pointer" />
-              <FaTwitter className="text-blue-500 w-6 h-6 cursor-pointer" />
-              <FaFacebook className="text-blue-600 w-6 h-6 cursor-pointer" />
-              <FaLinkedin className="text-blue-700 w-6 h-6 cursor-pointer" />
-            </div>
-          </div>
-          <div className="flex py-4 px-12 mb-24 bg-gray-100 w-full md:w-4/5 gap-4">
-            <div className="relative w-24 h-24">
-              <Image 
-                src={'/icons/Users.jpg'} 
-                alt="Users" 
-                fill
-                sizes="96px"
-              />
-            </div>
-            <div className="flex flex-col">
-              <h2 className="text-xs uppercase text-gray-700 font-semibold">Author</h2>
-              <h2 className="text-lg font-semibold tracking-wide">{data.author}</h2>
-            </div>
+          <div>
+            <p className="text-xs uppercase text-gray-500 font-semibold">Penulis</p>
+            <p className="text-lg font-medium">{author}</p>
           </div>
         </div>
       </div>
