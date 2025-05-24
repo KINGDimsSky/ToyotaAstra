@@ -7,7 +7,6 @@ export const cn = (...className : ClassValue[]) => {
 
 export const getBaseUrl = () => {
   if (typeof window !== 'undefined') {
-    // Client-side
     return '';
   }
 
