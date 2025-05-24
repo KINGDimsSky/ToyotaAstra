@@ -23,7 +23,7 @@ export default function PersonalSection() {
               <Image src={'/personal/Raysan1.jpg'} alt="Personal Image" fill className="object-cover object-top"/>
             </div>
             <div className="mt-8 lg:mt-12 text-center lg:text-left">
-              <h2 className="text-2xl sm:text-4xl font-bold tracking-wider uppercase">Raymond Sentosa</h2>
+              <h2 className="text-2xl sm:text-4xl font-bold tracking-wide uppercase">Raymond Santosa</h2>
               <p className="mt-4 sm:mt-6 text-gray-700 w-full lg:w-96 text-sm sm:text-base">
                 Pelajari lebih lanjut tentang teknologi pengisian daya modern dalam infrastruktur pengisian yang praktis.
               </p>
@@ -49,17 +49,17 @@ export default function PersonalSection() {
               <div className="flex flex-col max-w-full sm:max-w-52 gap-2 mt-2 sm:mt-6 border-b sm:border-b-0 sm:border-r border-gray-600 sm:pr-4 pb-4 sm:pb-0 items-center sm:items-start text-center sm:text-left">
                 <RiCustomerService2Fill className="text-4xl sm:text-[55px]"/>
                 <h2 className="text-lg font-semibold">Layanan Setiap Saat</h2>
-                <p className="text-gray-700 text-sm sm:text-base">Dengan Raymond Sentosa dapatkan Layanan Setiap Saat!</p>
+                <p className="text-gray-700 text-sm sm:text-base">Dengan Raymond Santosa dapatkan Layanan Setiap Saat!</p>
               </div>
               <div className="flex flex-col max-w-full sm:max-w-52 gap-2 mt-2 sm:mt-6 border-b sm:border-b-0 sm:border-r border-gray-600 sm:pr-4 pb-4 sm:pb-0 items-center sm:items-start text-center sm:text-left">
                 <FaHandsHelping className="text-4xl sm:text-[55px]"/>
                 <h2 className="text-lg font-semibold">Konsultasi Cepat</h2>
-                <p className="text-gray-700 text-sm sm:text-base">Dengan Raymond Sentosa Konsultasi kan Produk Toyota Astra pilihan Anda!</p>
+                <p className="text-gray-700 text-sm sm:text-base">Dengan Raymond Santosa Konsultasi kan Produk Toyota Astra pilihan Anda!</p>
               </div>
               <div className="flex flex-col max-w-full sm:max-w-52 gap-2 mt-2 sm:mt-6 items-center sm:items-start text-center sm:text-left">
                 <FaCar className="text-4xl sm:text-[55px]"/>
                 <h2 className="text-lg font-semibold">Dapatkan Produk Terbaik</h2>
-                <p className="text-gray-700 text-sm sm:text-base">Dengan Raymond Sentosa Dapatkan Produk Keinginan Anda!</p>
+                <p className="text-gray-700 text-sm sm:text-base">Dengan Raymond Santosa Dapatkan Produk Keinginan Anda!</p>
               </div>
             </div>
           </div>

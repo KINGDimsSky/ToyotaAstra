@@ -1,46 +1,76 @@
-import { MaxWidthWrapper } from "@/components/MaxWidthWrapper";
-import { FaPhone, FaMapMarkerAlt, FaEnvelope, FaClock, FaCar } from "react-icons/fa";
-import { MdOutlineSupportAgent } from "react-icons/md";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaTwitter,
-  FaYoutube
-} from "react-icons/fa";
+'use client'
 
+import { useState } from 'react';
+import { MaxWidthWrapper } from "@/components/MaxWidthWrapper";
+import { FaPhone, FaMapMarkerAlt, FaEnvelope, FaClock, FaCar, FaWhatsapp } from "react-icons/fa";
+import { MdOutlineSupportAgent } from "react-icons/md";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 export default function HubungiKami() {
+  const [formData, setFormData] = useState({
+    nama: '',
+    telepon: '',
+    email: '',
+    pesan: '',
+    produk: 'All New Veloz',
+    lokasi: 'Jakarta'
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const whatsappMessage = `Halo Plaza Toyota Gading Serpong,\n\nSaya ${formData.nama} ingin mendapatkan informasi lebih lanjut tentang:\n\n*Produk/Minat:* ${formData.produk}\n*Lokasi:* ${formData.lokasi}\n\nDetail kontak saya:\n- Telepon: ${formData.telepon}\n- Email: ${formData.email}\n\nPesan:\n${formData.pesan}\n\nTerima kasih.`;
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const whatsappNumber = '6281247029273'; 
+
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+  };
+
   return (
     <MaxWidthWrapper className="py-12">
       <div className="flex flex-col md:flex-row gap-12">
+        {/* Form Section */}
         <div className="w-full md:w-1/2">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Hubungi Kami</h1>
           <p className="text-gray-600 mb-8">
-            Silakan isi formulir di bawah ini dan tim kami akan segera menghubungi Anda.
+            Silakan isi formulir di bawah ini dan tim kami akan segera menghubungi Anda via WhatsApp.
           </p>
 
-          <form className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="nama" className="block text-sm font-medium text-gray-700 mb-1">
-                  Nama Lengkap
+                  Nama Lengkap *
                 </label>
                 <input
                   type="text"
                   id="nama"
+                  name="nama"
+                  required
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-600 focus:border-transparent"
-                  placeholder="Nama Anda"
+                  onChange={handleChange}
                 />
               </div>
               <div>
                 <label htmlFor="telepon" className="block text-sm font-medium text-gray-700 mb-1">
-                  Nomor Telepon
+                  Nomor WhatsApp *
                 </label>
                 <input
                   type="tel"
                   id="telepon"
+                  name="telepon"
+                  required
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-600 focus:border-transparent"
-                  placeholder="0812-3456-7890"
+                  onChange={handleChange}
+                  placeholder="Contoh: 081234567890"
                 />
               </div>
             </div>
@@ -52,9 +82,49 @@ export default function HubungiKami() {
               <input
                 type="email"
                 id="email"
+                name="email"
                 className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-600 focus:border-transparent"
-                placeholder="email@contoh.com"
+                onChange={handleChange}
               />
+            </div>
+
+            <div>
+              <label htmlFor="produk" className="block text-sm font-medium text-gray-700 mb-1">
+                Produk/Minat
+              </label>
+              <select
+                id="produk"
+                name="produk"
+                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-600 focus:border-transparent"
+                onChange={handleChange}
+                value={formData.produk}
+              >
+                <option value="All New Veloz">All New Veloz</option>
+                <option value="All New Avanza">All New Avanza</option>
+                <option value="Raize">Raize</option>
+                <option value="Fortuner">Fortuner</option>
+                <option value="Lainnya">Lainnya</option>
+              </select>
+            </div>
+
+            <div>
+              <label htmlFor="lokasi" className="block text-sm font-medium text-gray-700 mb-1">
+                Lokasi Anda
+              </label>
+              <select
+                id="lokasi"
+                name="lokasi"
+                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-600 focus:border-transparent"
+                onChange={handleChange}
+                value={formData.lokasi}
+              >
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bogor">Bogor</option>
+                <option value="Depok">Depok</option>
+                <option value="Tangerang">Tangerang</option>
+                <option value="Bekasi">Bekasi</option>
+                <option value="Lainnya">Lainnya</option>
+              </select>
             </div>
 
             <div>
@@ -63,8 +133,10 @@ export default function HubungiKami() {
               </label>
               <textarea
                 id="pesan"
+                name="pesan"
                 rows={4}
                 className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-600 focus:border-transparent"
+                onChange={handleChange}
                 placeholder="Tulis pesan Anda di sini..."
               ></textarea>
             </div>
@@ -73,19 +145,21 @@ export default function HubungiKami() {
               <label className="flex items-center">
                 <input
                   type="checkbox"
+                  required
                   className="rounded border-gray-300 text-red-600 focus:ring-red-600 mr-2"
                 />
                 <span className="text-sm text-gray-600">
-                  Saya setuju dengan kebijakan privasi
+                  Saya setuju dengan kebijakan privasi *
                 </span>
               </label>
             </div>
 
             <button
               type="submit"
-              className="w-full bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-6 rounded-md transition-colors duration-300"
+              className="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-md transition-colors duration-300 flex items-center justify-center gap-2"
             >
-              Kirim Pesan
+              <FaWhatsapp className="text-xl" />
+              Kirim via WhatsApp
             </button>
           </form>
         </div>
