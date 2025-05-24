@@ -7,8 +7,8 @@ export default function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleClick = () => {
-    const phoneNumber = '6281234567890';
-    const message = 'Halo, saya tertarik dengan produk ini';
+    const phoneNumber = '6281247029273';
+    const message = 'Halo, saya tertarik dengan Salah Satu Mobil Toyota!';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -23,7 +23,7 @@ export default function WhatsAppButton() {
           </div>
         )}
         {isHovered && (
-          <span className="ml-2 mr-2 font-semibold animate-pulse"> Hubungi Whatsapp</span>
+          <span className="ml-2 mr-2 font-semibold animate-pulse">Hubungi Whatsapp</span>
         )}
       </div>
     </div>
