@@ -37,15 +37,22 @@ export const GetByCategoryNews = async (category: string) => {
 
 // src/services/index.service.ts
 
+// services/index.service.ts
 export async function GetNews(slug?: string) {
   try {
-    const url = slug ? `${getBaseUrl()}/api/news/?slug=${slug}` : `${getBaseUrl()}/api/news/`;
-    const res = await fetch(url);
-    if (!res.ok) throw new Error('Failed to fetch news');
-    return await res.json();
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+    const url = slug ? `${baseUrl}/api/news/?slug=${slug}` : `${baseUrl}/api/news/`;
+    const res = await fetch(url, { next: { revalidate: 60 } }); // Tambahkan cache
+    
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
+    
+    const data = await res.json();
+    return data || { data: [] }; // Pastikan selalu return objek dengan properti data
   } catch (error) {
-    console.error('Error Getting News Data!', error);
-    return null;
+    console.error('Error getting news:', error);
+    return { data: [] }; // Struktur konsisten
   }
 }
 

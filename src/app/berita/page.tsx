@@ -19,7 +19,19 @@ interface NewsItem {
 
 export default async function Berita () {
     const news = await GetNews();
-    console.log (news.data)
+
+    if (!news || news.error){
+      return (
+        <MaxWidthWrapper className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <h2 className="text-2xl font-semibold text-red-600">
+            {news?.error || 'Gagal memuat berita'}
+          </h2>
+          <p className="mt-4">Silakan coba lagi nanti</p>
+        </div>
+      </MaxWidthWrapper>
+      )
+    }
 
     return (
         <MaxWidthWrapper className="mt-4 md:mt-8 mb-8 md:mb-12">
@@ -33,7 +45,7 @@ export default async function Berita () {
               <h2 className="text-4xl font-bold tracking-wide">Latest News</h2>
             </div>
             <div className="flex justify-center w-full flex-wrap gap-4 mt-6">
-              {news.data.length >  0 ? (
+              {news.data?.length >  0 ? (
                 <div>
                   {news.data.map((data: NewsItem) => (
                     <CardNews key={data.id} title={data.title} category={data.category} calendarDate={data.calendarDate} heroImage={data.HeroImage} slug={data.slug} className=""/>
