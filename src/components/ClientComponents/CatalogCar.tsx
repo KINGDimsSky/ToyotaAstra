@@ -6,6 +6,7 @@ import CardProduct from "./Cardproduct";
 import { MdFileDownload } from "react-icons/md";
 import { MaxWidthWrapper } from "../MaxWidthWrapper";
 import { getDataCar } from "@/services/index.service";
+import Link from "next/link";
 
 export default function CatalogCar () {
     const [StateCategory, SetStateCategory] = useState<string>('All');
@@ -47,7 +48,7 @@ export default function CatalogCar () {
                   <div className="flex gap-2 flex-wrap mb-12">
                     {CarData.map((data) => (
                       <CardProduct key={data.id} slug={data.slug} name={data.name} category={data.category} 
-                      carImage={data.carImage} price={data.price}/>
+                      carImage={data.carImage} price={data.price} pdf={data.pdf}/>
                     ))}
                   </div>
                 ) : (
@@ -65,7 +66,7 @@ export default function CatalogCar () {
                 )}
               </div>
               <div className="flex self-center items-center w-fit bg-pink-600 hover:bg-pink-800 transition-all duration-200 py-3 px-6 gap-1 cursor-pointer">
-                <h2 className="font-semibold text-white">Unduh Daftar Harga</h2>
+                <Link href={'/assets/DaftarHargaToyota.pdf'} className="font-semibold text-white">Unduh Daftar Harga</Link>
                 <MdFileDownload className="w-6 h-6 mt-1 text-white"/>
               </div>
             </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaCloudDownloadAlt, FaFileContract } from "react-icons/fa";
 
-export default function CardProduct ({name, category, price, carImage, slug} : {name: string, category: string, price: number, carImage: string, slug: string}) {
+export default function CardProduct ({name, category, price, carImage, slug, pdf} : {name: string, category: string, price: number, carImage: string, slug: string, pdf:string}) {
     return (
         <div className="flex flex-col w-full sm:w-80 md:w-[20.5rem] lg:w-[22.5rem] rounded-2xl overflow-hidden border border-gray-300">
            <div className="relative w-full h-40 sm:h-48 cursor-pointer">
@@ -30,11 +30,11 @@ export default function CardProduct ({name, category, price, carImage, slug} : {
                 <h2 className="text-gray-600 tracking-tight text-xs sm:text-sm">{category}</h2>
                 <div className="flex items-center gap-3">
                   <div className="flex gap-1 items-center hover:text-pink-600 cursor-pointer">
-                    <h2 className="font-semibold text-xs sm:text-sm">Get Your Offer</h2>
+                    <Link href={'/hubungi-kami'} className="font-semibold text-xs sm:text-sm">Get Your Offer</Link>
                     <FaFileContract size={20} className="sm:w-4 sm:h-4 group-[]:"/>
                   </div>
                   <div className="flex gap-1 items-center hover:text-pink-600 cursor-pointer">
-                    <Link href={''} className="font-semibold text-xs sm:text-sm">Brosur</Link>
+                    <Link href={pdf} className="font-semibold text-xs sm:text-sm">Brosur</Link>
                     <FaCloudDownloadAlt size={20} className="sm:w-5 sm:h-5"/>
                   </div>
                 </div>

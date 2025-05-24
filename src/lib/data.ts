@@ -36,7 +36,83 @@ export const dataNews = [
 ]
 
 export const dataCar = [
-    {id: 1, name: 'All New Vellfire HEV', category: 'MPV', price: 387000000, pdf: '', slug: 'AllNewVellfireHEV', 
+    {id: 1, name: 'All New Vellfire HEV', category: 'MPV', price: 387000000, pdf: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/All%20New%20Alphard%20&%20Vellfire%20.pdf', slug: 'AllNewVellfireHEV', 
+        carImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/VellfireCardImage.png', heroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/VellFireHeroImage.jpg',  BeyondExterior: {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/BeyondExterior/BeyondExterior.jpg', subtitle: 'The More Elegant Front Grille', contentSubtitle: 'Bring out the bold look to the surroundings in all ways.', anotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/BeyondExterior/BeyondExterior1.jpg', title: 'Simplicity in Boldness Emblem', subtitle: 'The Vellfire emblem detail are designed to strengthen the extravagance look on every journey.'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/BeyondExterior/BeyondExterior2.jpg',  title: 'Rear Combination Lamp and Rear Fog Lamp', subtitle: 'Head turning rear appearance with Rear Combination and Rear Fog Lamp.'}
+            ] 
+        },
+        beyondInterior : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            ]
+        },
+        beyondSafety : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            ]
+        },
+        beyondPerformance : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+               
+            ]
+        },
+        beyondConnected : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            ]
+        },
+        beyondAccessoris : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+               
+            ]
+        },
+        ColorCar : {
+            Heroimage : '/', AnotherImage : [
+                
+            ]
+        }
+
+    },
+    {id: 2, name: 'All New Alphard HEV', category: 'MPV', price: 387000000, pdf: '', slug: 'AllNewAlphardHEV', 
+        carImage: '/Cars/Testing.jpg', heroImage: '/Cars/Testing.jpg',  BeyondExterior: {
+            HeroImage: '/assets/BmwM2.jpg', subtitle: 'Discover every path with the next level luxury Toyota All New Alphard HEV along with Modellista design to contribute more for the environment.', contentTitle: 'Luxury Front Grille', contentSubtitle: 'The elegance and luxurious Front Grille design mark your presence wherever you go. (All Type)', anotherImage: [
+                {id: 1, img: '/assets/ToyotaAgya.jpg', title: 'Testing', subtitle: 'awdoaowdokaokdo kawkdokawo dkoawkd okawodkokawodkwoakdkoaodkoodakwoko '}, {id: 2, img: '/assets/ToyotaAlphard.jpg',  title: '', subtitle: ''}, {id: 3, img: '/assets/ToyotaHilux.jpg',  title: '', subtitle: ''}, {id: 4, img: '/assets/ToyotaSpektakuler.jpg',  title: '', subtitle: ''},
+            ] 
+        },
+        beyondInterior : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            ]
+        },
+        beyondSafety : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            ]
+        },
+        beyondPerformance : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+               
+            ]
+        },
+        beyondConnected : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            ]
+        },
+        beyondAccessoris : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+               
+            ]
+        },
+        ColorCar : {
+            Heroimage : '/', AnotherImage : [
+                
+            ]
+        }
+
+    },
+    {id: 3, name: 'All New Kijang Innova Zenix HEV', category: 'MPV', price: 387000000, pdf: '', slug: 'AllNewKijangInnovaZenixHEV', 
         carImage: '/Cars/Testing.jpg', heroImage: '/Cars/Testing.jpg',  BeyondExterior: {
             HeroImage: '/assets/BmwM2.jpg', subtitle: 'Discover every path with the next level luxury Toyota All New Alphard HEV along with Modellista design to contribute more for the environment.', contentTitle: 'Luxury Front Grille', contentSubtitle: 'The elegance and luxurious Front Grille design mark your presence wherever you go. (All Type)', anotherImage: [
                 {id: 1, img: '/assets/ToyotaAgya.jpg', title: 'Testing', subtitle: 'awdoaowdokaokdo kawkdokawo dkoawkd okawodkokawodkwoakdkoaodkoodakwoko '}, {id: 2, img: '/assets/ToyotaAlphard.jpg',  title: '', subtitle: ''}, {id: 3, img: '/assets/ToyotaHilux.jpg',  title: '', subtitle: ''}, {id: 4, img: '/assets/ToyotaSpektakuler.jpg',  title: '', subtitle: ''},

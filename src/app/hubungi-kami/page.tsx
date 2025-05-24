@@ -222,6 +222,9 @@ export default function HubungiKami() {
               <a href="#" className="bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors duration-300">
                 <FaInstagram className="text-gray-700 text-xl" />
               </a>
+              <a href="" className='bg-gray-200 hover:bg-gray-300 p-3 rounded-full transition-colors duration-300'>
+                 <FaWhatsapp className="text-gray-700 text-xl"/>
+              </a>
             </div>
           </div>
         </div>

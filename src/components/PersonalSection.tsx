@@ -20,12 +20,12 @@ export default function PersonalSection() {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           <div className="flex flex-col items-center lg:items-start">
             <div className="relative h-72 w-full sm:h-80 sm:w-80 lg:h-[28rem] lg:w-96 rounded-xl overflow-hidden bg-yellow-400 border border-gray-400">
-              <Image src={'/personal/Raysan1.jpg'} alt="Personal Image" fill className="object-cover object-top"/>
+              <Image src={'/personal/Raysanbgwhite.jpg'} alt="Personal Image" fill className="object-cover object-top"/>
             </div>
             <div className="mt-8 lg:mt-12 text-center lg:text-left">
               <h2 className="text-2xl sm:text-4xl font-bold tracking-wide uppercase">Raymond Santosa</h2>
               <p className="mt-4 sm:mt-6 text-gray-700 w-full lg:w-96 text-sm sm:text-base">
-                Pelajari lebih lanjut tentang teknologi pengisian daya modern dalam infrastruktur pengisian yang praktis.
+                Hubungi Raymond Santosa Dengan Whatsapp Atau email Dan dapatkan Penawaran Khusus! Atau konsultasi bebas
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 w-full justify-center lg:justify-start">
