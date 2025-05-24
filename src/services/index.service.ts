@@ -1,5 +1,7 @@
+import { getBaseUrl } from "@/lib";
+
 export const getDataCar = async (category ?: string) => {
-    const data = await fetch(`/api/cars/?category=${category}`)
+    const data = await fetch(`${getBaseUrl()}/api/cars/?category=${category}`)
 
     if (!data.ok){
         throw new Error('Failed To Getting Vehicle Data!');
@@ -10,7 +12,7 @@ export const getDataCar = async (category ?: string) => {
 
 export const GetDetailedCar = async (slug?: string) => {
     try {
-        const res = await fetch(`http://localhost:3000/api/detailedcar/?slug=${slug}`, {
+        const res = await fetch(`${getBaseUrl()}/api/detailedcar/?slug=${slug}`, {
         cache: 'no-store'
     })
     const data = await res.json()
@@ -27,7 +29,7 @@ export const GetDetailedCar = async (slug?: string) => {
 
 export const GetByCategoryNews = async (category: string) => {
   try {
-    const res = await fetch(`http://localhost:3000/api/news/?category=${category}`, {
+    const res = await fetch(`${getBaseUrl()}/api/news/?category=${category}`, {
       cache: 'no-store'
     });
     return await res.json();
@@ -41,7 +43,7 @@ export const GetByCategoryNews = async (category: string) => {
 
 export async function GetNews(slug?: string) {
   try {
-    const url = slug ? `http://localhost:3000/api/news/?slug=${slug}` : 'http://localhost:3000/api/news/';
+    const url = slug ? `${getBaseUrl()}/api/news/?slug=${slug}` : `${getBaseUrl()}/api/news/`;
     const res = await fetch(url, { cache: 'no-store' });
     if (!res.ok) throw new Error('Failed to fetch news');
     return await res.json();

@@ -12,8 +12,6 @@ interface PageProps{
 export default async function DetailedCar ({params} : PageProps) {
     const {slug} = await params;
     const car = await GetDetailedCar(slug)
-    console.log (car)
-    console.log (slug)
 
     if (!car || !car.data) {
       return (
