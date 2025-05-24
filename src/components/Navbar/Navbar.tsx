@@ -51,22 +51,14 @@ export default function Navbar() {
               <div key={item.id} className="relative group">
                 {item.id === 2 ? ( 
                   <>
-                    <button
-                      onClick={() => toggleSubmenu(item.id)}
-                      className="px-3 py-2 uppercase tracking-wider font-medium text-gray-800 hover:text-pink-600 transition-colors flex items-center gap-1"
-                    >
+                    <button onClick={() => toggleSubmenu(item.id)} className="px-3 py-2 uppercase tracking-wider font-medium text-gray-800 hover:text-pink-600 transition-colors flex items-center gap-1">
                       {item.name}
                       <FaChevronDown className={`text-xs mt-0.5 transition-transform ${activeSubmenu === item.id ? 'rotate-180' : ''}`} />
-                    </button>
-                    
+                    </button>  
                     {activeSubmenu === item.id && (
                       <div className="absolute left-0 top-full bg-white shadow-lg rounded-md min-w-[220px] py-2">
                         {mobilSubmenu.map((car) => (
-                          <Link
-                            key={car.id}
-                            href={car.href}
-                            className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-pink-600 transition-colors"
-                          >
+                          <Link key={car.id} href={car.href} className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-pink-600 transition-colors">
                             {car.name}
                           </Link>
                         ))}
@@ -74,10 +66,7 @@ export default function Navbar() {
                     )}
                   </>
                 ) : (
-                  <Link
-                    href={item.href || '#'}
-                    className="px-3 py-2 uppercase tracking-wider font-medium text-gray-800 hover:text-pink-600 transition-colors"
-                  >
+                  <Link href={item.href || '#'} className="px-3 py-2 uppercase tracking-wider font-medium text-gray-800 hover:text-pink-600 transition-colors">
                     {item.name}
                   </Link>
                 )}
@@ -85,12 +74,7 @@ export default function Navbar() {
             ))}
           </nav>
 
-
-          <button 
-            onClick={toggleMenu}
-            className="md:hidden flex items-center justify-center w-10 h-10 z-50 focus:outline-none"
-            aria-label={isOpen ? "Close menu" : "Open menu"}
-          >
+          <button onClick={toggleMenu} className="md:hidden flex items-center justify-center w-10 h-10 z-50 focus:outline-none" aria-label={isOpen ? "Close menu" : "Open menu"}>
             {isOpen ? (
               <FaTimes className="text-2xl text-gray-800" />
             ) : (
@@ -104,10 +88,7 @@ export default function Navbar() {
                 <li key={item.id} className="border-b border-gray-100">
                   {item.id === 2 ? (
                     <>
-                      <button
-                        onClick={() => toggleSubmenu(item.id)}
-                        className="flex items-center justify-between w-full py-3 text-lg font-medium text-gray-800 uppercase tracking-wide"
-                      >
+                      <button onClick={() => toggleSubmenu(item.id)} className="flex items-center justify-between w-full py-3 text-lg font-medium text-gray-800 uppercase tracking-wide">
                         <span>{item.name}</span>
                         <FaChevronDown className={`text-sm transition-transform ${activeSubmenu === item.id ? 'rotate-180' : ''}`} />
                       </button>
@@ -115,12 +96,7 @@ export default function Navbar() {
                       {activeSubmenu === item.id && (
                         <div className="pl-4 pb-2">
                           {mobilSubmenu.map((car) => (
-                            <Link
-                              key={car.id}
-                              href={car.href}
-                              className="block py-2 text-gray-600 hover:text-pink-600"
-                              onClick={() => setIsOpen(false)}
-                            >
+                            <Link key={car.id} href={car.href} className="block py-2 text-gray-600 hover:text-pink-600" onClick={() => setIsOpen(false)}>
                               {car.name}
                             </Link>
                           ))}
@@ -128,11 +104,7 @@ export default function Navbar() {
                       )}
                     </>
                   ) : (
-                    <Link
-                      href={item.href || '#'}
-                      className="block py-3 text-lg font-medium text-gray-800 uppercase tracking-wide hover:text-pink-600"
-                      onClick={() => setIsOpen(false)}
-                    >
+                    <Link href={item.href || '#'} className="block py-3 text-lg font-medium text-gray-800 uppercase tracking-wide hover:text-pink-600" onClick={() => setIsOpen(false)}>
                       {item.name}
                     </Link>
                   )}

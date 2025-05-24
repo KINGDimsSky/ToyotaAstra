@@ -38,7 +38,7 @@ export default async function DetailedCar ({params} : PageProps) {
               </MaxWidthWrapper>
             </div>
             <MaxWidthWrapper className="flex flex-col">
-              <div className="flex gap-4 mt-4 self-center">
+              <div className="flex flex-wrap justify-center gap-4 mt-4 self-center">
                 <a href='/hubungi-kami' className="p-4 bg-gray-950 text-white font-semibold flex gap-2 items-center hover:bg-gray-800 transition-all duration-300 cursor-pointer"><span><FaShoppingCart/></span> Pesan Sekarang</a>
                 <a href="/hubungi-kami" className="p-4 bg-gray-950 text-white font-semibold flex gap-2 items-center hover:bg-gray-800 transition-all duration-300 cursor-pointer"><span><FaCar /></span>Test Drive</a>
                 <a href={car.data.pdf} className="p-4 bg-gray-950 text-white font-semibold flex gap-2 items-center hover:bg-gray-800 transition-all duration-300 cursor-pointer"><span><FaDownload /></span>Unduh Brosur</a>
