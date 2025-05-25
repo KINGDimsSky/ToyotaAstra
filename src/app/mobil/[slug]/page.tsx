@@ -25,7 +25,7 @@ export default async function DetailedCar ({params} : PageProps) {
 
     return (
         <div className="">
-           <div className="h-[45vh] md:h-[90vh] w-full flex items-center justify-center relative overflow-hidden bg-yellow-200">
+           <div className="h-[45vh] md:h-[90vh] w-full flex items-center justify-center relative overflow-hidden bg-gray-400">
            <Image src={car.data.heroImage} alt={car.data.name} fill className="object-cover"/>
            </div>
            <div className="flex w-full bg-gray-950 py-3 px-4 sm:px-0">
