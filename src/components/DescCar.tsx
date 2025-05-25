@@ -86,7 +86,7 @@ const BeyondInterior = ({
       <h2 className="self-center text-2xl md:text-4xl font-bold mt-12 md:mt-24">
         Beyond Interior
       </h2>
-      <p className="text-xs md:text-sm text-gray-600 mt-2 md:mt-4 text-center px-4 md:px-0">
+      <p className="text-xs w-4/5 md:text-sm text-gray-600 mt-2 md:mt-4 text-center px-4 md:px-0">
         {subtitle}
       </p>
       <div className="relative w-full md:w-5/6 h-64 md:h-[34rem] bg-gray-200 mt-4 md:mt-6">
@@ -147,7 +147,7 @@ const BeyondSafety = ({
       <h2 className="self-center text-2xl md:text-4xl font-bold mt-12 md:mt-24">
         Beyond Safety
       </h2>
-      <p className="text-xs md:text-sm text-gray-600 mt-2 md:mt-4 text-center px-4 md:px-0">
+      <p className="text-xs md:text-sm w-4/5 text-gray-600 mt-2 md:mt-4 text-center px-4 md:px-0">
         {subtitle}
       </p>
       <div className="relative w-full md:w-5/6 h-64 md:h-[34rem] bg-gray-200 mt-4 md:mt-6">
@@ -208,7 +208,7 @@ const BeyondPerformance = ({
       <h2 className="self-center text-2xl md:text-4xl font-bold mt-12 md:mt-24">
         Beyond Performance
       </h2>
-      <p className="text-xs md:text-sm text-gray-600 mt-2 md:mt-4 text-center px-4 md:px-0">
+      <p className="text-xs md:text-sm w-4/5 text-gray-600 mt-2 md:mt-4 text-center px-4 md:px-0">
         {subtitle}
       </p>
       <div className="relative w-full md:w-5/6 h-64 md:h-[34rem] bg-gray-200 mt-4 md:mt-6">
@@ -273,7 +273,7 @@ const BeyondConnected = ({
       <h2 className="self-center text-2xl md:text-4xl font-bold mt-12 md:mt-24">
         Beyond Connected
       </h2>
-      <p className="text-xs md:text-sm text-gray-600 mt-2 md:mt-4 text-center px-4 md:px-0">
+      <p className="text-xs md:text-sm w-4/5 text-gray-600 mt-2 md:mt-4 text-center px-4 md:px-0">
         {subtitle}
       </p>
       <div className="relative w-full md:w-5/6 h-64 md:h-[34rem] bg-gray-200 mt-4 md:mt-6">

@@ -28,14 +28,14 @@ export default function PersonalSection() {
                 Hubungi Raymond Santosa Dengan Whatsapp Atau email Dan dapatkan Penawaran Khusus! Atau konsultasi bebas
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 w-full justify-center lg:justify-start">
+            <div className="flex flex-col  gap-3 sm:gap-4 mt-6 sm:mt-8 w-full justify-center lg:justify-start">
               <a href="" className="font-semibold p-2 sm:p-4 bg-pink-700 hover:bg-pink-500 transition-all duration-200 text-white flex items-center justify-center gap-2 text-sm sm:text-base">
                <FaWhatsapp className="text-sm sm:text-base"/>
-                <span>08211231932</span>
+                <span>081936628181</span>
               </a>
-              <a href="" className="font-semibold p-2 sm:p-4 bg-pink-700 hover:bg-pink-500 transition-all duration-200 text-white flex items-center justify-center gap-2 text-sm sm:text-base">
+              <a href="" className="font-semibold p-2 sm:p-4 max-w-full bg-pink-700 hover:bg-pink-500 transition-all duration-200 text-white flex items-center justify-center gap-2 text-sm sm:text-base">
                 <MdMail className="text-sm sm:text-base"/>
-                <span>Raysan@gmail.com</span>
+                <span>raymond.santosa@plazatoyota.co.id</span>
               </a>
             </div>
           </div>

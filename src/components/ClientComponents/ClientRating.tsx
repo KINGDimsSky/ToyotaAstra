@@ -19,35 +19,35 @@ export default function ClientRating() {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      name: "Sophia Williams",
-      job: "CEO at NexGen Tech",
-      message: "The level of professionalism and attention to detail exceeded all our expectations. Our productivity increased by 60% after implementation.",
+      name: "Dimas Zulkarnain",
+      job: "CEO at Agri-X",
+      message: "Penawaran Dengan Raymond Santosa membuat saya Untuk tidak memikirkan 2x untuk memilih Produk Toyota yang bagus!",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200"
+      avatar: "/personal/DimsSky.jpg"
     },
     {
       id: 2,
-      name: "Michael Chen",
-      job: "Marketing Director",
-      message: "Working with this team was transformative. They understood our vision immediately and delivered beyond what we imagined possible.",
+      name: "Daffa Attala",
+      job: "Staff Admins",
+      message: "Tim ini benar-benar membantu kami memahami produk yang sesuai kebutuhan. Prosesnya cepat, transparan, dan sangat memuaskan.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200"
+      avatar: "/icons/Users.jpg"
     },
     {
       id: 3,
-      name: "Emma Rodriguez",
-      job: "Product Lead at InnovateX",
-      message: "The seamless integration and intuitive design saved us countless hours. Customer satisfaction scores are at an all-time high.",
+      name: "Ratna Sari",
+      job: "Kepala Divisi Produk, PT Inovatif Solusi",
+      message: "Integrasi sistem dan desain yang ditawarkan sangat memudahkan operasional kami. Efisiensi meningkat, dan klien pun lebih puas.",
       rating: 4,
-      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200"
+      avatar: "/icons/Users.jpg"
     },
     {
       id: 4,
-      name: "James Wilson",
-      job: "CTO Digital Solutions",
-      message: "Technical excellence combined with creative problem-solving. They identified opportunities we didn't even know existed.",
+      name: "Ahmad Wildan",
+      job: "CEO At - IndolineSentosa",
+      message: "Salah satu pengalaman kerja terbaik. Mereka tidak hanya menyelesaikan masalah, tapi juga memberikan solusi yang tidak kami pikirkan sebelumnya.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200"
+      avatar: "/icons/Users.jpg"
     }
   ];
 
@@ -91,7 +91,7 @@ export default function ClientRating() {
                     <p className="text-xl text-gray-700 mb-8 flex-1">{testimonial.message}</p>
                     <div className="border-t border-gray-100 pt-6">
                       <div className="flex items-center">
-                        <Image width={44} height={44} src={testimonial.avatar} alt={testimonial.name} className="rounded-full object-cover border-2 border-white shadow-md"/>
+                        <Image width={55} height={60} src={testimonial.avatar} alt={testimonial.name} className="rounded-full object-cover border-2 border-white shadow-md"/>
                         <div className="ml-4">
                           <div className="flex mb-1">
                             {[...Array(5)].map((_, i) => (

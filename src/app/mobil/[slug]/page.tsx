@@ -46,11 +46,12 @@ export default async function DetailedCar ({params} : PageProps) {
                 <DescCar key={car.data.id}>
                   <DescCar.BeyondExterior subtitle={car.data.BeyondExterior.subtitle} contentTitle={car.data.BeyondExterior.contentTitle}
                   contentSubtitle={car.data.BeyondExterior.contentSubtitle} image={car.data.BeyondExterior.HeroImage} AnotherImage={car.data.BeyondExterior.anotherImage}/>
-                  <DescCar.BeyondInterior heroImage={car.data.beyondInterior.HeroImage} anotherImage={car.data.BeyondExterior.anotherImage}/>
-                  <DescCar.BeyondSafety heroImage={car.data.beyondSafety.HeroImage} AnotherImage={car.data.BeyondExterior.anotherImage}/>
-                  <DescCar.BeyondPerformance heroImage={car.data.beyondPerformance.HeroImage} AnotherImage={car.data.beyondPerformance.AnotherImage}/>
-                  <DescCar.beyondConnected heroImage={car.data.beyondConnected.HeroImage} AnotherImage={car.data.BeyondExterior.anotherImage}/>
-                  <DescCar.Accessoris heroImage={car.data.beyondAccessoris.HeroImage} AnotherImage={car.data.beyondAccessoris.AnotherImage}/>
+                  <DescCar.BeyondInterior subtitle={car.data.beyondInterior.subtitle} contentTitle={car.data.beyondInterior.contentTitle}
+                  contentSubtitle={car.data.beyondInterior.contentSubtitle} heroImage={car.data.beyondInterior.HeroImage} anotherImage={car.data.beyondInterior.AnotherImage}/>
+                  <DescCar.BeyondSafety subtitle={car.data.beyondSafety.subtitle} contentTitle={car.data.beyondSafety.contentTitle} contentSubtitle={car.data.beyondSafety.contentSubtitle} heroImage={car.data.beyondSafety.HeroImage} AnotherImage={car.data.beyondSafety.AnotherImage}/>
+                  <DescCar.BeyondPerformance subtitle={car.data.beyondPerformance.subtitle} contentTitle={car.data.beyondPerformance.contentTitle} contentSubtitle={car.data.beyondPerformance.contentSubtitle} heroImage={car.data.beyondPerformance.HeroImage} AnotherImage={car.data.beyondPerformance.AnotherImage}/>
+                  <DescCar.beyondConnected subtitle={car.data.beyondConnected.subtitle} contentTitle={car.data.beyondConnected.contentTitle} contentSubtitle={car.data.beyondConnected.contentSubtitle} heroImage={car.data.beyondConnected.HeroImage} AnotherImage={car.data.beyondConnected.AnotherImage}/>
+                  <DescCar.Accessoris subtitle={car.data.beyondAccessoris.subtitle} contentTitle={car.data.beyondAccessoris.contentTitle} contentSubtitle={car.data.beyondAccessoris.contentSubtitle} heroImage={car.data.beyondAccessoris.HeroImage} AnotherImage={car.data.beyondAccessoris.AnotherImage}/>
                   <DescCar.ColorCar heroImage={car.data.ColorCar.Heroimage} AnotherImage={car.data.ColorCar.AnotherImage}/>
                 </DescCar>
             </MaxWidthWrapper>

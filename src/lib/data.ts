@@ -43,33 +43,33 @@ export const dataCar = [
             ] 
         },
         beyondInterior : {
-            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
-                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/BeyondInterior/BeyondInterior.jpg', subtitle: 'Discover elegant ways to enhance your environmental contribution and enjoy a luxurious experience by exploring numerous new paths with Toyota All New Vellfire HEV.',  contentTitle: 'The Classic Luxury Interior Design', contentSubtitle: 'Create a sense of ambience through the classy Interior Design, including the Steering Wheel, 12.3” TFT MID, 14” Head Unit Display, and Wireless Charger.', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/BeyondInterior/BeyondInterior2.jpg',  title: 'Enhance Productivity with Luxurious Multifunctional Table', subtitle: 'Provide a Multifunction Table to support your productivity, complete with Detachable Smartphone-like remote control'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/BeyondInterior/BeyondInterior1.jpg',  title: 'Power Long Slide Seat', subtitle: 'Take your journey enjoyment to the next level with Power Long Slide Seat'}
             ]
         },
         beyondSafety : {
-            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
-                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/BeyondSafety/BeyondSafety.jpg', subtitle: 'The first-class Toyota innovative safety feature protects and prevents passengers from any harm for serenity in every mile.',  contentTitle: 'Toyota Safety Sense - Lane Departure Alert (LDA)', contentSubtitle: 'Keep the vehicle on the safe lane, thus making the driver confident and feel safe while driving.', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/BeyondSafety/BeyondSafety1.jpg',  title: 'Toyota Safety Sense - Dynamic Radar Cruise Control', subtitle: 'A system designed to help drivers maintain a safe distance and stay within the speed limit'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/BeyondSafety/BeyondSafety2.jpg',  title: 'Toyota Safety Sense - Lane Tracing Assist', subtitle: 'Driving track safety assistance to keep the driver on track with providing light correction.'}, {id: 3, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/BeyondSafety/BeyondSafety3.jpg',  title: 'Toyota Safety Sense - Adaptive High Beam (AHB)', subtitle: 'Toyota Safety Sense - Adaptive High Beam (AHB)'}, {id: 4, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/BeyondSafety/BeyondSafety4.jpg',  title: 'Toyota Safety Sense - Adaptive High Beam (AHB)', subtitle: 'Early warning when there is a possibility of collision to perform braking or avoidance maneuvers.'}, {id: 5, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/BeyondSafety/BeyondSafety5.jpg',  title: 'Driver Monitoring System', subtitle: 'Safety system to alert and warn the drivers to press the brake when the camera detect drowsy or inattentive to the road. (Alphard G & HEV, Vellfire HEV Type)'},
             ]
         },
         beyondPerformance : {
-            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/Beyond%20Performance/BeyondPerformance.jpg', subtitle: 'Experience sophisticated feeling in every path with Toyota All New Vellfire HEV and bring sustainable impact for environment.',  contentTitle: 'HEV Engine', contentSubtitle: 'Sustainable system design delivers fuel efficiency and environmental friendly in every journey. (HEV Type)', AnotherImage: [
                
             ]
         },
         beyondConnected : {
-            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
-                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/BeyondConnected/BeyondConnected.jpg', subtitle: 'An integrated solution that you can access through mTOYOTA application. Giving you comfort, providing peace of mind, and keeping you stay connected with your car.',  contentTitle: 'Find My Car', contentSubtitle: 'Accurately know where the vehicle is parked to provide you with a feeling of safety and convenience.', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/BeyondConnected/BeyondConnected1.jpg',  title: 'Geofencing', subtitle: 'Giving alert if your vehicle is outside the authorized zone to ensure your security at all times'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/BeyondConnected/BeyondConnected2.jpg',  title: 'Stolen Vehicle Tracking', subtitle: 'Know your vehicle location assisted by Toyota Call Center to provide you security all the time.'}
             ]
         },
         beyondAccessoris : {
-            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/BeyondAccessoris/BeyondAccessoris.jpg', subtitle: 'Toyota exclusive parts as an option for people to custom their car.',  contentTitle: 'Package Modellista (Front Skirt, Side Skirt, Rear Skirt)', contentSubtitle: '*Available soon for Toyota All New Vellfire All Type.', AnotherImage: [
                
             ]
         },
         ColorCar : {
-            Heroimage : '/', AnotherImage : [
-                
+            Heroimage : 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/VellfireCardImage.png', AnotherImage : [
+                {id:1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Vellfire%20HEV/ColorCar/ColorWhite.png'}
             ]
         }
 
