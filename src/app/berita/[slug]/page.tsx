@@ -24,7 +24,7 @@ export default async function DetailedNews({ params }: PageProps) {
     );
   }
 
-  const { title, date, author, subtitle, content } = news.data;
+  const { title, date, author, subtitle, content, HeroImage } = news.data;
 
   return (
     <MaxWidthWrapper className="mt-6 md:mt-12">
@@ -55,7 +55,7 @@ export default async function DetailedNews({ params }: PageProps) {
         {/* Gambar Utama */}
         <div className="relative w-full md:w-4/5 aspect-video bg-gray-200 mt-6">
           <Image
-            src="/News/GazooRacing.jpg"
+            src={HeroImage}
             alt={`Gambar Berita: ${title}`}
             fill
             className="object-cover"
