@@ -15,8 +15,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Home | Toyota Astra Mobil | Mobil Terbaik Keluarga",
-  description: "Toyota Industries Corporation develops and manufactures automobiles and automobile-related products.",
+  title: "Astra Mobil | Mobil Terbaik Keluarga ",
+  description: "Raymond Santosa Plaza Toyota Gading Serpong JL Raya Boulevard, Kav. 5-11, Gading Serpong, Summarecon, Tangerang, Curug Sangereng, Kelapa Dua, Tangerang Regency, Banten 15810",
 };
 
 export default function RootLayout({

@@ -42,7 +42,7 @@ export default function PersonalSection() {
           <div className="flex flex-col">
             <p className="text-2xl sm:text-4xl font-bold uppercase text-center lg:text-left"> Plaza Toyota Gading Serpong</p>
             <p className="mt-2 sm:mt-4 text-gray-700 text-sm sm:text-base text-center lg:text-left">JL Raya Boulevard, Kav. 5-11, Gading Serpong, Summarecon, Tangerang, Curug Sangereng, Kelapa Dua, Tangerang Regency, Banten 15810</p>
-            <div className="relative w-full h-80 sm:h-52 lg:h-96 rounded-xl sm:rounded-2xl bg-amber-300 mt-4 overflow-hidden">
+            <div className="relative w-full h-80 sm:h-52 lg:h-96 rounded-xl sm:rounded-2xl bg-gray-400 mt-4 overflow-hidden">
               <Image src={'/personal/Raysanyellowcar.jpg'} alt="Raysan" fill className="object-cover object-left-top"/>
             </div>
             <div className="hidden md:flex flex-col sm:flex-row gap-4 items-center sm:items-stretch mt-6">
