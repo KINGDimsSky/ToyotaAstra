@@ -15,11 +15,19 @@ export default function CardProduct ({name, category, price, carImage, slug, pdf
               <div className="absolute flex flex-col left-3 sm:left-4.5 bottom-2 sm:bottom-3.5 text-white">
                 <h2 className="text-xs sm:text-xs">Mulai dari</h2>
                <h2 className="text-xl sm:text-xl md:text-2xl tracking-wide font-semibold">
-                 {new Intl.NumberFormat("id-ID", {
+                {price === 0 ? (
+                  <div>
+                    <h2 className="text-md">Call Dealer</h2>
+                  </div>
+                ) : (
+                   <div>
+                  {new Intl.NumberFormat("id-ID", {
                     style: "currency",
                     currency: "IDR",
                     minimumFractionDigits: 0,
                   }).format(price)}
+                </div>
+                )}  
                </h2>
               </div>
            </div>

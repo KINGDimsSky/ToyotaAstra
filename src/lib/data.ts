@@ -513,6 +513,110 @@ export const dataCar = [
     },
     {id: 14, name: 'All New RAV4 GR Sport PHEV', category: 'SUV', price: 0, pdf: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/Leaflet%20RAV4%202023__compressed_0.pdf', slug: 'AllNewRAV4GRSportPHEV', 
         carImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/1%20Dual%20Tone%20Attitude%20Black%20MC%20&%20Platinum%20White%20Pearl.png', heroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/Home-Banner-All-New-RAV4-GR-Sport-PHEV-Desktop-1293x628.jpg',  BeyondExterior: {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/BeyondExterior/exterior%20fitur1%201200x675_0.jpg', subtitle: 'Control your adventure. From enjoying the city lights to overcoming the rough terrains, everything is arranged with its versatile yet elegant design', contentTitle: 'Bold Radiator Grille', contentSubtitle: 'Embedded with the GR emblem, the exclusive Bold Radiator Grille will elevate the outstanding driving experience with its rough yet discerning look', anotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/BeyondExterior/exterior%20fitur2%201200x675_0.jpg', title: 'Sporty Lower Front Bumper', subtitle: 'Creates a majestic presence with Lower Front Bumper that will dignify your adventurous driving experience'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/BeyondExterior/exterior%20fitur3%201200x675_0.jpg',  title: 'Fog Lamp Bezel', subtitle: 'Ignite every ride with the Fog Lamp Bezel that comes with significant shape and great visibility it gives for your rambles'}
+            ] 
+        },
+        beyondInterior : {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/BeyondInterior/interior%20fitur1%201200x675_0.jpg', subtitle: 'Elegant Interior with the progressive technology to bring limitless entertainment around the vehicles interior',  contentTitle: 'Elegant Interior', contentSubtitle: 'Amplify your journey with the progressive technology to bring limitless entertainment with Dark Gray Metallic Ornament attached around the vehicles interior', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/BeyondInterior/interior%20fitur2%201200x675_0.jpg',  title: '10.3-Inch Wide Display Audio System', subtitle: 'Stay connected in all journeys with the 10.3-Inch Toyota Auto Multimedia, equipped with Smartphone Connectivity and Navigation System for boundless enjoyment'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/BeyondExterior/exterior%20fitur2%201200x675_0.jpg',  title: 'Dual AC with White Lighting Switches and Display', subtitle: 'Control the air distribution system as you desire with the Dual AC equipped, along with White Lighting Switches and Display for powerful impression anywhere.'}
+            ]
+        },
+        beyondSafety : {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/BeyondSafety/TSS%20fitur1_4.jpg', subtitle: 'Ensure safety by enduring impacts to minimize the chance of injury.',  contentTitle: 'Toyota Safety Sense - Dynamic Radar Cruise Control (DRCC)', contentSubtitle: 'Steering assist support helps you automatically follow a preceding vehicle within a safe distance, with enhanced recognition and curve speed restrain function', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/BeyondSafety/TSS%20fitur2_4.jpg',  title: 'Toyota Safety Sense - Automated High Beam (AHB)', subtitle: 'Detect headlights and taillights of the vehicles in front and gives earlier detection of pedestrians or obstacles, then adjust the lamp and direction automatically when the button is switched on.'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/BeyondSafety/TSS%20fitur3_4.jpg',  title: 'Toyota Safety Sense - Pre-Collision System (PCS)', subtitle: 'Integrated camera and radar system that helps to reduce crash risk and damage with enhanced recognition of intersection collision and avoidance for turns and vehicle meet head-on.'}
+            ]
+        },
+        beyondPerformance : {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/BeyondPerformance/performance%20fitur1%201200x675.jpg', subtitle: 'Perform through anywhere. Change up all terrains with The All-New RAV4 GR Sport PHEV.',  contentTitle: 'GR Suspension and Good Handling', contentSubtitle: 'Ramble comfortably with outstanding acceleration in full efficiency for your adventurous necessity', AnotherImage: [
+               {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/BeyondPerformance/performance%20fitur2%201200x675.jpg', title: 'Plug-in Performance', subtitle: 'Now you can go far and be thrilled in every journey as every journey as every adventure now is electrified'}
+            ]
+        },
+        beyondConnected : {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/BeyondConnected/connected%20fitur1%201200x675.jpg', subtitle: 'An integration solution that you can access through mTOYOTA application. Giving you comfort, providing peace of mind, and keeping you stay connected with your car',  contentTitle: 'Find My Car', contentSubtitle: 'Accurately know where the vehicle is parked to provide you feeling of safety and convenience', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/BeyondConnected/connected%20fitur2%201200x675.jpg',  title: 'Geofencing', subtitle: 'Giving alert if your vehicle is outside the authorized zone to ensure your security at all times'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/BeyondConnected/connected%20fitur3%201200x675.jpg',  title: 'Stolen Vehicle Tracking', subtitle: 'Know your vehicle location assisted by Toyota Call Center to provide you security all the time'}
+            ]
+        },
+        beyondAccessoris : {},
+        ColorCar : {
+            Heroimage : 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/1%20Dual%20Tone%20Attitude%20Black%20MC%20&%20Platinum%20White%20Pearl.png', AnotherImage : [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20RAV4%20GR%20Sport%20PHEV/2%20Dual%20Tone%20Black%20&%20Emotional%20Red%202.png', title: 'Dual Tone Black & Emotional Red', subtitle: ''}
+            ]
+        }
+
+    },
+    {id: 15, name: 'All New Yaris Cross HEV', category: 'SUV', price: 437200000, pdf: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/Leaflet%20-%20Yaris%20Cross%20Update%20compress_0.pdf', slug: 'AllNewYarisCrossHEV', 
+        carImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/1%20Attitude%20Black%20Mica%20_%20Platinum%20White%20Pearl.png', heroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/Home-Banner-All-New-Yaris-Cross-Hybrid-Desktop-1293x628.jpg',  BeyondExterior: {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/BeyondExterior/exterior%20fitur1%201200x450_6.jpg', subtitle: 'The adventurous soul with urban lifestyle fused into one delicate design', contentTitle: 'Seamless Electric Power Back Door with Kick Sensor (All S Type)', contentSubtitle: 'Conveniently open and close the back door with only a swipe of your feet', anotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/BeyondExterior/exterior%20fitur2%201200x450_0.jpg', title: 'Stunning 18" Alloy Wheel (All S Type)', subtitle: ''}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/BeyondExterior/exterior%20fitur3_2.jp',  title: 'Blazing LED Headlamp with DLR & Follow Me Home (All S Type)', subtitle: ''}
+            ] 
+        },
+        beyondInterior : {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/BeyondInterior/interior%20fitur1_1.jpg', subtitle: 'Energizing comfort for your artive and stylish lifestyle',  contentTitle: 'Fancy Panoramic Glass Roof with Power Sunshade (All HV Type)', contentSubtitle: 'Enjoy the sky scenery with the advance technology.', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/BeyondInterior/interior%20fitur2_1.jpg',  title: 'Marvelous 10.1" Display Audio with Wireless Smartphone Connectivity (All S Type)', subtitle: 'Fulfill your senses and stay seamlessly connected through advanced multimedia system'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/BeyondInterior/interior%20fitur3_1.jpg',  title: 'Multicolor Ambient Illumination Light with Voice Command Control (All HV Type)', subtitle: 'Set up your mood according to your heart with 14 color choices'}
+            ]
+        },
+        beyondSafety : {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/BeyondSafety/TSS%20fitur1_0.jpg', subtitle: 'Ensure safety by enduring impacts to minimize the change of injury',  contentTitle: 'Toyota Safety Sense (All S Type) - Pre-Collision Warning & Pre-Collision Braking', contentSubtitle: 'Integrated camera and radar system that help to reduce crash risk and damage in frontal collision', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/BeyondSafety/TSS%20fitur2_0.jpg',  title: 'Toyota Safety Sense (All S Type) - Lane Departure Warning & Lane Departure Prevention', subtitle: 'Support and assist the driver in volding unintended lane departure, with visual and audible alert plus steering assis'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/BeyondSafety/TSS%20fitur3_0.jpg',  title: 'Toyota Safety Sense (All S Type) - Adaptive Cruise Control', subtitle: 'Detect a preceding vehicle and follow within a safe distance, therefore reducing the fatigue of long driving'}
+            ]
+        },
+        beyondPerformance : {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/BeyondPerformance/performance%20fitur1%201200x450_3.jpg', subtitle: 'The invention of innovation, energize your drive and activate your soul at every journey',  contentTitle: 'HEV - Electric Manifestation (All HV Type)', contentSubtitle: 'Our commitment to keep producing the ever-better car that suitable for everyone', AnotherImage: [
+               {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/BeyondPerformance/performance%20fitur2%201200x450_2.jpg', title: 'High Technology Hybrid System (All HV Type', subtitle: 'Toyotas self-charging hybrid electric vehicle is driven using both engine and battery-powered electric motor'}
+            ]
+        },
+        beyondConnected : {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/BeyondConnected/connected%20fitur1%201200x450_3.jpg', subtitle: 'An integration solution that you can access through mTOYOTA application. Giving you comfort, providing peace of mind, and keeping you stay connected with your car',  contentTitle: 'Find My Car (All S Type)', contentSubtitle: 'Accurately know where the vehicle is parked to provide you feeling of safety and convenience', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/BeyondConnected/connected%20fitur2%201200x450_3.jpg',  title: 'Geofencing (All S Type)', subtitle: 'Giving alert if your vehicle is outside the authorized zone to ensure your security at all times'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/BeyondConnected/connected%20fitur3%201200x450_3.jpg',  title: 'Safe Driving Rewards (All S Type)', subtitle: 'Safety drive your Toyota and be rewarded with certain benefits based on your driving behavior'}
+            ]
+        },
+        beyondAccessoris : {},
+        ColorCar : {
+            Heroimage : 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/1%20Attitude%20Black%20Mica%20_%20Platinum%20White%20Pearl.png', AnotherImage : [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/2%20Attitude%20Black%20Mica%20_%20Silver%20Metallic.png', title: 'Silver Metallic', subtitle: ''}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/3%20Attitude%20Black%20Mica%20_%20Spicy%20Scarlet.png', title: 'Spicy Scarlet', subtitle: ''}, {id: 3, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/4%20Super%20White%20II_0.png', title: 'Super White', subtitle: ''}, {id: 4, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/5%20Greenish%20Gunmetal%20M.M_0.png', title: 'Greenish GunMetal', subtitle: ''}, {id: 5, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/6%20Attitude%20Black%20Mica_0.png', title: 'Black Mica', subtitle: ''}, {id: 6, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Yaris%20Cross%20HEV/7%20Dark%20Red%20M.M_0.png', title: 'Dark Red', subtitle: ''}, 
+            ]
+        }
+    },
+    {id: 16, name: 'All New Land Cruiser', category: 'SUV', price: 2629000000, pdf: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/Toyota%20-%20Revise%20Leaflet%20Land%20Cruiser_compressed.pdf', slug: 'AllNewLandCruiser', 
+        carImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/02%20attitude%20black%20mica%20(all%20type).png', heroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/Home-Banner-Desktop-1293x628_7.jpg',  BeyondExterior: {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/BeyondExterior/exterior%20fitur1_9.jpg', subtitle: 'When the rigorous meet the marvelous', contentTitle: 'New Adaptive Headlamp Design', contentSubtitle: '(All Type)', anotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/BeyondExterior/exterior%20fitur2_9.jpg', title: 'New Grille Design', subtitle: '(GR-S Type)'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/BeyondExterior/exterior%20fitur3_8.jpg',  title: 'New Front Bumper', subtitle: '(GR-S Type)'}
+            ] 
+        },
+        beyondInterior : {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/BeyondExterior/interior%20fitur2_10.jpg', subtitle: 'All new divine convenience',  contentTitle: 'All New Divine Convenience', contentSubtitle: 'From the delicate ornamentation and modern technology surrounding the cabin, The All-New Land Cruiser will provide you with more quietness inside the cabin as the world of unlimited pleasure will accompany your majestic journey ahead.', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/BeyondExterior/interior%20fitur3_9.jpg',  title: 'New Freedom In Space', subtitle: 'Exceed all the obstacles in every ease on any road with the sporty and fierce look of The All-New Land Cruiser that comes with the combination of red and black color'}
+            ]
+        },
+        beyondSafety : {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/BeyondSafety/fitur1_0.jpg', subtitle: 'Toyota Safety Sense 3.0',  contentTitle: 'Toyota Safety Sense 3.0 - Pre-Collision System (PCS)', contentSubtitle: 'An integrated radar system that helps to reduce crash risk and damage in a frontal collision with motorcycle detection.', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/BeyondConnected/fitur2_0.jpg',  title: 'Toyota Safety Sense 3.0 - Lane Departure Alert (LDA)', subtitle: 'Support and assist the driver in avoiding unintended lane departure with visual and audible alert plus steering assist'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/BeyondConnected/fitur3_0.jpg',  title: 'Toyota Safety Sense 3.0 - Rear Camera Detection (RCD)', subtitle: 'Supports and assists the driver in avoiding pedestrians by displaying pedestrian detection.'}
+            ]
+        },
+        beyondPerformance : {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/BeyondPerformance/performance%20fitur1_5.jpg', subtitle: 'All new powertrain and transmission.',  contentTitle: 'New Engine', contentSubtitle: 'The newly 6-cylinders turbo engine will improve acceleration and also brings fuel efficiency for the best driving experience that will make you always feel at ease', AnotherImage: [
+               {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/BeyondPerformance/performance%20fitur2_1.jpg', title: 'New Transmission', subtitle: '10-speed Direct shift-10AT brought various measures to minimize energy loss and elevate transmission efficiency. Gear tooth surfaces were processed using a new technique for a lower coefficient of friction when the gears engaged'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/BeyondPerformance/performance%20fitur3_1.jpg', title: 'New Transmission', subtitle: 'The change gear shift comes with new design, from a gate or zigzag type to straight line models with the objective to convey a convenient driving experience.'}
+            ]
+        },
+        beyondConnected : {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/BeyondSafety/fitur1_1.jpg', subtitle: 'Live connected.',  contentTitle: 'Find My Car', contentSubtitle: 'Accurately know where the vehicle is parked to provide you feeling of safety and convenience.', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/BeyondConnected/fitur2_1.jpg',  title: 'Stolen Vehicle Tracking', subtitle: 'Know your vehicle location assisted by Toyota Call Center to provide you security all the time'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/BeyondConnected/fitur3_1.jpg',  title: 'Geofencing', subtitle: 'Giving alert if your vehicle is outside the authorized zone to ensure your security at all times'}
+            ]
+        },
+        beyondAccessoris : {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/BeyondAccessoris/accessories%20fitur1%201200x675_1.jpg', subtitle: 'Toyota customization option. Show your style!',  contentTitle: 'Bonnet Protector', contentSubtitle: 'Roam with no hesitation with Bonnet Protector that guards The All-New Land Cruiser against any light damage from road debris.', AnotherImage: [
+               {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/BeyondAccessoris/accessories%20fitur2%201200x675_0.jpg', title: 'Rubber Floor-Mat', subtitle: 'Preserve your majestic interior as the easy-to-clean Rubber Floor Mat is provided inside to greet your great journey everywhere in all weather. (All Type)'}
+            ]
+        },
+        ColorCar : {
+            Heroimage : 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/02%20attitude%20black%20mica%20(all%20type).png', AnotherImage : [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Land%20Cruiser/03%20precious%20white%20(all%20type).png', title: 'Precisious White', subtitle: ''}
+            ]
+        }
+    },
+    {id: 17, name: 'All New Raize GR Sport', category: 'SUV', price: 242200000, pdf: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/Leaflet%20-%20All%20New%20Raize.pdf', slug: 'AllNewRaizeGRSport', 
+        carImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/1-Platinum-White-Pearl_0.png', heroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/Home-Banner-Desktop-1293x628_5.jpg',  BeyondExterior: {
             HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/BeyondExterior/exterior-fitur1%201200x675.jpg', subtitle: 'Cross Over to Energize Today', contentTitle: 'New Crossover Front Looks (All Type)', contentSubtitle: 'The elegance and luxurious Front Grille design mark your presence wherever you go. (All Type)', anotherImage: [
                 {id: 1, img: '/assets/ToyotaAgya.jpg', title: 'Testing', subtitle: 'awdoaowdokaokdo kawkdokawo dkoawkd okawodkokawodkwoakdkoaodkoodakwoko '}, {id: 2, img: '/assets/ToyotaAlphard.jpg',  title: '', subtitle: ''}, {id: 3, img: '/assets/ToyotaHilux.jpg',  title: '', subtitle: ''}, {id: 4, img: '/assets/ToyotaSpektakuler.jpg',  title: '', subtitle: ''},
             ] 
@@ -549,7 +653,85 @@ export const dataCar = [
         }
 
     },
-    {id: 15, name: 'All New Yaris Cross HEV', category: 'SUV', price: 437200000, pdf: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/All%20New%20Kijang%20Innova%20Zenixpdf.pdf', slug: 'NewKijangInnova', 
+    {id: 18, name: 'All New BZ4X BEV', category: 'SUV', price: 0, pdf: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/All%20New%20Kijang%20Innova%20Zenixpdf.pdf', slug: 'NewKijangInnova', 
+        carImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/1-Platinum-White-Pearl_0.png', heroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/Home-Banner-Desktop-1293x628_5.jpg',  BeyondExterior: {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/BeyondExterior/exterior-fitur1%201200x675.jpg', subtitle: 'Cross Over to Energize Today', contentTitle: 'New Crossover Front Looks (All Type)', contentSubtitle: 'The elegance and luxurious Front Grille design mark your presence wherever you go. (All Type)', anotherImage: [
+                {id: 1, img: '/assets/ToyotaAgya.jpg', title: 'Testing', subtitle: 'awdoaowdokaokdo kawkdokawo dkoawkd okawodkokawodkwoakdkoaodkoodakwoko '}, {id: 2, img: '/assets/ToyotaAlphard.jpg',  title: '', subtitle: ''}, {id: 3, img: '/assets/ToyotaHilux.jpg',  title: '', subtitle: ''}, {id: 4, img: '/assets/ToyotaSpektakuler.jpg',  title: '', subtitle: ''},
+            ] 
+        },
+        beyondInterior : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            ]
+        },
+        beyondSafety : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            ]
+        },
+        beyondPerformance : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+               
+            ]
+        },
+        beyondConnected : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            ]
+        },
+        beyondAccessoris : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+               
+            ]
+        },
+        ColorCar : {
+            Heroimage : '/', AnotherImage : [
+                
+            ]
+        }
+
+    },
+
+    //HatchBack
+    {id: 19, name: 'All New Yaris Cross HEV', category: 'SUV', price: 437200000, pdf: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/All%20New%20Kijang%20Innova%20Zenixpdf.pdf', slug: 'NewKijangInnova', 
+        carImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/1-Platinum-White-Pearl_0.png', heroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/Home-Banner-Desktop-1293x628_5.jpg',  BeyondExterior: {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/BeyondExterior/exterior-fitur1%201200x675.jpg', subtitle: 'Cross Over to Energize Today', contentTitle: 'New Crossover Front Looks (All Type)', contentSubtitle: 'The elegance and luxurious Front Grille design mark your presence wherever you go. (All Type)', anotherImage: [
+                {id: 1, img: '/assets/ToyotaAgya.jpg', title: 'Testing', subtitle: 'awdoaowdokaokdo kawkdokawo dkoawkd okawodkokawodkwoakdkoaodkoodakwoko '}, {id: 2, img: '/assets/ToyotaAlphard.jpg',  title: '', subtitle: ''}, {id: 3, img: '/assets/ToyotaHilux.jpg',  title: '', subtitle: ''}, {id: 4, img: '/assets/ToyotaSpektakuler.jpg',  title: '', subtitle: ''},
+            ] 
+        },
+        beyondInterior : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            ]
+        },
+        beyondSafety : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            ]
+        },
+        beyondPerformance : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+               
+            ]
+        },
+        beyondConnected : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            ]
+        },
+        beyondAccessoris : {
+            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
+               
+            ]
+        },
+        ColorCar : {
+            Heroimage : '/', AnotherImage : [
+                
+            ]
+        }
+
+    },
+    {id: 20, name: 'All New Yaris Cross HEV', category: 'SUV', price: 437200000, pdf: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/All%20New%20Kijang%20Innova%20Zenixpdf.pdf', slug: 'NewKijangInnova', 
         carImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/1-Platinum-White-Pearl_0.png', heroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/Home-Banner-Desktop-1293x628_5.jpg',  BeyondExterior: {
             HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/BeyondExterior/exterior-fitur1%201200x675.jpg', subtitle: 'Cross Over to Energize Today', contentTitle: 'New Crossover Front Looks (All Type)', contentSubtitle: 'The elegance and luxurious Front Grille design mark your presence wherever you go. (All Type)', anotherImage: [
                 {id: 1, img: '/assets/ToyotaAgya.jpg', title: 'Testing', subtitle: 'awdoaowdokaokdo kawkdokawo dkoawkd okawodkokawodkwoakdkoaodkoodakwoko '}, {id: 2, img: '/assets/ToyotaAlphard.jpg',  title: '', subtitle: ''}, {id: 3, img: '/assets/ToyotaHilux.jpg',  title: '', subtitle: ''}, {id: 4, img: '/assets/ToyotaSpektakuler.jpg',  title: '', subtitle: ''},
