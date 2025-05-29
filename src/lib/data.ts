@@ -616,84 +616,71 @@ export const dataCar = [
         }
     },
     {id: 17, name: 'All New Raize GR Sport', category: 'SUV', price: 242200000, pdf: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/Leaflet%20-%20All%20New%20Raize.pdf', slug: 'AllNewRaizeGRSport', 
-        carImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/1-Platinum-White-Pearl_0.png', heroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/Home-Banner-Desktop-1293x628_5.jpg',  BeyondExterior: {
-            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/BeyondExterior/exterior-fitur1%201200x675.jpg', subtitle: 'Cross Over to Energize Today', contentTitle: 'New Crossover Front Looks (All Type)', contentSubtitle: 'The elegance and luxurious Front Grille design mark your presence wherever you go. (All Type)', anotherImage: [
-                {id: 1, img: '/assets/ToyotaAgya.jpg', title: 'Testing', subtitle: 'awdoaowdokaokdo kawkdokawo dkoawkd okawodkokawodkwoakdkoaodkoodakwoko '}, {id: 2, img: '/assets/ToyotaAlphard.jpg',  title: '', subtitle: ''}, {id: 3, img: '/assets/ToyotaHilux.jpg',  title: '', subtitle: ''}, {id: 4, img: '/assets/ToyotaSpektakuler.jpg',  title: '', subtitle: ''},
+        carImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/raize-black.png', heroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/homebanner%20raize%20desktop%201293x628.jpg',  BeyondExterior: {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/BeyondExterior/exterior%20fitur1_4.jpg', subtitle: 'Feel more power enjoy more moments', contentTitle: 'New GR Front grille (All 1.0T GR Sport Type)', contentSubtitle: 'An exclusive new front grille with the GR emblem marked on it, adds a striking look to the cars exterior', anotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/BeyondExterior/exterior%20fitur2_3.jpg', title: 'New GR Side Visor (All 1.0T GR Sport Type)', subtitle: 'Enhance your driving experience with the new GR embosses patched on the side visor that reduces direct rays of the sun'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/BeyondExterior/exterior%20fitur3_4.jpg',  title: 'New Black Outer Mirror (All 1.0T GR Sport Type)', subtitle: 'Made with detailed attention to create a bolder and more sporty feeling while driving.'}
             ] 
         },
         beyondInterior : {
-            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
-                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/BeyondInterior/interior%20fitur1_4.jpg', subtitle: 'Feel more power enjoy more moments.',  contentTitle: 'New Sporty Interior Design (All 1.0T GR Sport Type)', contentSubtitle: 'The savvy boost by the New GR Logo that is installed around the cabin as the advanced features will give a fun-to-drive atmosphere and enriched driving experience', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/BeyondInterior/interior%20fitur2_4.jpg',  title: 'New GR Push Start Button (All 1.0T GR Sport Type)', subtitle: 'Start engine button with GR Emblem for a more convenient and sporty beginning'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/BeyondInterior/interior%20fitur3_4.jpg',  title: 'New GR 9" Head Unit (All 1.0T GR Sport Type)', subtitle: 'A vast array of entertainments with GR DA opening logo to enhance your enjoyable driving experience'}
             ]
         },
         beyondSafety : {
-            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
-                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/BeyondSafety/safety%20fitur2.jpg', subtitle: 'Maximum safety for every passenger to provide total peace of mind and excitement in every journey.',  contentTitle: 'Lane Departure Warning & Lane Departure Prevention', contentSubtitle: 'Support and assist the driver in avoiding unintended lane departure, with visual and audible alert plus steering assist', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/BeyondSafety/safety%20fitur3.jpg',  title: 'Pedal Misoperation Control', subtitle: 'Preventing front collision when parking from accidentally punching the gas instead of the brake'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/BeyondSafety/safety%20fitur4_0.jpg',  title: 'Pre-Collision Warning & Pre-Collision Braking', subtitle: 'Integrated camera and radar system that help to reduce crash risk and damage in a frontal collision'}
             ]
         },
-        beyondPerformance : {
-            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
-               
-            ]
-        },
-        beyondConnected : {
-            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
-                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
-            ]
-        },
+        beyondPerformance : {},
+        beyondConnected : {},
         beyondAccessoris : {
-            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
-               
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/BeyondAccessoris/accessories%20fitur1_2.jpg', subtitle: 'Customization items for all types may vary depending on the products and areas',  contentTitle: 'Cargo Net (All Type)', contentSubtitle: 'Protective net for your luggage to keep your storage always in place', AnotherImage: [
+               {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/BeyondAccessoris/accessories%20fitur2_2.jpg', title: 'GR Door Scuff Plate (All Type)', subtitle: 'An exquisite scuff Plate in each side door will welcome you with a strong presence'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/BeyondAccessoris/accessories%20fitur3_1.jpg', title: 'GR Door Handle Protector (All Type)', subtitle: 'Start your journey comfortably, as the door handles are now protected with sporty and stylish pads'}
             ]
         },
         ColorCar : {
-            Heroimage : '/', AnotherImage : [
-                
+            Heroimage : 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/raize-black.png', AnotherImage : [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/raize-gray-metallic.png', title: '', subtitle: ''}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/raize-red-black.png', title: '', subtitle: ''}, {id: 3, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/raize-red.png', title: '', subtitle: ''}, {id: 4, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/raize-silver-metallic-black.png', title: '', subtitle: ''}, {id: 5, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/raize-silver-metallic.png', title: '', subtitle: ''}, {id: 6, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/raize-turquoise-mm-black.png', title: '', subtitle: ''}, {id: 7, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/raize-turquoise-mm.png', title: '', subtitle: ''}, {id: 8, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/raize-white-black.png', title: '', subtitle: ''}, {id: 9, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/raize-white.png', title: '', subtitle: ''}, {id: 10, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/raize-yellow-black.png', title: '', subtitle: ''}, {id: 11, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20Raize%20GR%20Sport/raize-yellow.png', title: '', subtitle: ''},
             ]
         }
-
     },
-    {id: 18, name: 'All New BZ4X BEV', category: 'SUV', price: 0, pdf: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/All%20New%20Kijang%20Innova%20Zenixpdf.pdf', slug: 'NewKijangInnova', 
-        carImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/1-Platinum-White-Pearl_0.png', heroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/Home-Banner-Desktop-1293x628_5.jpg',  BeyondExterior: {
-            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/BeyondExterior/exterior-fitur1%201200x675.jpg', subtitle: 'Cross Over to Energize Today', contentTitle: 'New Crossover Front Looks (All Type)', contentSubtitle: 'The elegance and luxurious Front Grille design mark your presence wherever you go. (All Type)', anotherImage: [
-                {id: 1, img: '/assets/ToyotaAgya.jpg', title: 'Testing', subtitle: 'awdoaowdokaokdo kawkdokawo dkoawkd okawodkokawodkwoakdkoaodkoodakwoko '}, {id: 2, img: '/assets/ToyotaAlphard.jpg',  title: '', subtitle: ''}, {id: 3, img: '/assets/ToyotaHilux.jpg',  title: '', subtitle: ''}, {id: 4, img: '/assets/ToyotaSpektakuler.jpg',  title: '', subtitle: ''},
+    {id: 18, name: 'All New BZ4X BEV', category: 'SUV', price: 0, pdf: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/catalog_bz4x_compressed.pdf', slug: 'AllNewBZ4XBEV', 
+        carImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/01-two-tone-black-precious-metal.png', heroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/Product%20Banner%20BZ4K%201293%20x%20628-01.jpg',  BeyondExterior: {
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/BeyondExterior/exterior-fitur1%201200x675.jpg', subtitle: 'Go Beyond Zero', contentTitle: 'Front Bumper and Spoiler Grille', contentSubtitle: 'The Front Grilles unique BEV design, aerodynamic performance by Front Bumper Spoiler', anotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/BeyondExterior/exterior-fitur2%201200x675.jpg', title: 'Roof Spoiler', subtitle: 'Aerodynamic performance by Roof Spoiler.'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/BeyondExterior/exterior-fitur3%201200x675.jpg',  title: 'Panoramic Roof', subtitle: 'Surpass greater distance while enjoying the gaze with a large span Panoramic Roof'}
             ] 
         },
         beyondInterior : {
-            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
-                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/BeyondInterior/interior-fitur1%201200x675.jpg', subtitle: 'Pleasure Beyond Spacious',  contentTitle: 'Premium Dashboard', contentSubtitle: 'Make your journey always feel prestige with the leather-wrapped steering wheel and the soft-touch materials decorating the dashboard as all the control system is put within your reach', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/BeyondInterior/interior-fitur1%201200x675.jpg',  title: 'Advanced Multi-Information Display', subtitle: 'The Multi-Information Display is perfectly placed right above the steering wheel to give you all information with modern graphics'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/BeyondInterior/interior-fitur1%201200x675.jpg',  title: '12.3 inch Toyota Audio Multimedia with Human Machine Interface (HMI)', subtitle: 'Heightens all modern interaction through your sight, touch, and voice recognition with 12.3-inch Toyota Audio Multimedia with Human Machine Interface (HMI) for you to connect with your smartphones app'}
             ]
         },
         beyondSafety : {
-            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
-                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/BeyondSafety/safety-fitur1%201200x675.png', subtitle: 'Safety Beyond Technology',  contentTitle: 'Safety Exit Assist', contentSubtitle: 'Giving audible and visual alerts when people open the door and there is an approaching vehicle from the rear side.', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/BeyondSafety/safety-fitur2%201200x675.png',  title: 'Parking Support Brake (PSB)', subtitle: 'Detection covers a wide area surrounding the vehicle, helping to avoid minor collisions and reduce damages'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/BeyondSafety/safety-fitur3%201200x675.png',  title: 'Integration A-Pillar (Enhance Safety)', subtitle: 'With integrated design pillar that enhances consumer safety from crash forces'}
             ]
         },
         beyondPerformance : {
-            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
-               
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/BeyondPerformance/performance-fitur1%201200x675.jpg', subtitle: 'Power Beyond Performance',  contentTitle: 'Advanced Parking', contentSubtitle: 'Designed to assist the driver with hands-free parking, especially when parallel parking or reverse parking and also automatically helps you for searching parking spaces', AnotherImage: [
+               {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/BeyondPerformance/performance-fitur2%201200x675.jpg', title: 'e-TNGA Platform', subtitle: 'As the first Toyota vehicle that utilizes brand new e-TNGA (Toyota New Global Architecture), All-New Toyota bZ4X is made'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/BeyondPerformance/performance-fitur3%201200x675.jpg', title: 'Safety and Fast Charging Battery Technology System', subtitle: 'The batterys safety and service wont be compromised as the fast-charging battery technology system can be achieved in up to 30 minutes for 0-80% battery with a 150 kW system'}
             ]
         },
         beyondConnected : {
-            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
-                {id: 1, img: '/',  title: '', subtitle: ''}, {id: 2, img: '/',  title: '', subtitle: ''}, {id: 3, img: '/',  title: '', subtitle: ''},
+            HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/BeyondConnected/connected1%201200x675.jpg', subtitle: 'Stay Connected',  contentTitle: 'Find My Car', contentSubtitle: 'Accurately know where the vehicle is parked to provide you feeling of safety and convenience', AnotherImage: [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/BeyondConnected/connected2%201200x675.jpg',  title: 'Geofencing', subtitle: 'Giving alert if your vehicle is outside the authorized zone to ensure your security at all times'}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/BeyondConnected/connected3%201200x675.jpg',  title: 'E-Care (Maintenance)', subtitle: 'A reminder to you for periodic vehicle maintenance to make your vehicle always in the best performance'}
             ]
         },
-        beyondAccessoris : {
-            HeroImage: '/', subtitle: '',  contentTitle: '', contentSubtitle: '', AnotherImage: [
-               
-            ]
-        },
+        beyondAccessoris : {},
         ColorCar : {
-            Heroimage : '/', AnotherImage : [
-                
+            Heroimage : 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/01-two-tone-black-precious-metal.png', AnotherImage : [
+                {id: 1, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/02-two-tone-black-precious-silver.png', title: '', subtitle: ''}, {id: 2, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/03-two-tone-black-platinum-white-pearl-mica.png', title: '', subtitle: ''}, {id: 3, img: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/All%20New%20BZ4X%20BEV/04-black.png', title: '', subtitle: ''}
             ]
         }
 
     },
 
     //HatchBack
-    {id: 19, name: 'All New Yaris Cross HEV', category: 'SUV', price: 437200000, pdf: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/All%20New%20Kijang%20Innova%20Zenixpdf.pdf', slug: 'NewKijangInnova', 
+    {id: 19, name: 'New Agya GR Sport', category: 'HatchBack', price: 236900000, pdf: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/All%20New%20Kijang%20Innova%20Zenixpdf.pdf', slug: 'NewKijangInnova', 
         carImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/1-Platinum-White-Pearl_0.png', heroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/Home-Banner-Desktop-1293x628_5.jpg',  BeyondExterior: {
             HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/BeyondExterior/exterior-fitur1%201200x675.jpg', subtitle: 'Cross Over to Energize Today', contentTitle: 'New Crossover Front Looks (All Type)', contentSubtitle: 'The elegance and luxurious Front Grille design mark your presence wherever you go. (All Type)', anotherImage: [
                 {id: 1, img: '/assets/ToyotaAgya.jpg', title: 'Testing', subtitle: 'awdoaowdokaokdo kawkdokawo dkoawkd okawodkokawodkwoakdkoaodkoodakwoko '}, {id: 2, img: '/assets/ToyotaAlphard.jpg',  title: '', subtitle: ''}, {id: 3, img: '/assets/ToyotaHilux.jpg',  title: '', subtitle: ''}, {id: 4, img: '/assets/ToyotaSpektakuler.jpg',  title: '', subtitle: ''},
@@ -731,7 +718,7 @@ export const dataCar = [
         }
 
     },
-    {id: 20, name: 'All New Yaris Cross HEV', category: 'SUV', price: 437200000, pdf: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/All%20New%20Kijang%20Innova%20Zenixpdf.pdf', slug: 'NewKijangInnova', 
+    {id: 20, name: 'New GR Yaris', category: 'HatchBack', price: 1166000000, pdf: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/All%20New%20Kijang%20Innova%20Zenixpdf.pdf', slug: 'NewKijangInnova', 
         carImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/1-Platinum-White-Pearl_0.png', heroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/Home-Banner-Desktop-1293x628_5.jpg',  BeyondExterior: {
             HeroImage: 'https://ejubexrazhfcgonlkgxj.supabase.co/storage/v1/object/public/car/Kijang%20Innova%20Zenix%20HEV/BeyondExterior/exterior-fitur1%201200x675.jpg', subtitle: 'Cross Over to Energize Today', contentTitle: 'New Crossover Front Looks (All Type)', contentSubtitle: 'The elegance and luxurious Front Grille design mark your presence wherever you go. (All Type)', anotherImage: [
                 {id: 1, img: '/assets/ToyotaAgya.jpg', title: 'Testing', subtitle: 'awdoaowdokaokdo kawkdokawo dkoawkd okawodkokawodkwoakdkoaodkoodakwoko '}, {id: 2, img: '/assets/ToyotaAlphard.jpg',  title: '', subtitle: ''}, {id: 3, img: '/assets/ToyotaHilux.jpg',  title: '', subtitle: ''}, {id: 4, img: '/assets/ToyotaSpektakuler.jpg',  title: '', subtitle: ''},
